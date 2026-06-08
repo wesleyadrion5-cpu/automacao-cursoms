@@ -1,0 +1,13 @@
+[23/02/2026 16:21:56] ERRO DETECTADO EM: _extracao_massa_thread ((SES/TO) Teorias de Enfermagem)
+MENSAGEM: Message: 
+
+RASTREAMENTO COMPLETO:
+Traceback (most recent call last):
+  File "d:\Videos\Versão Final (Subir Aula)\Subir Aula (Versão Final) - Delta.py", line 648, in _extracao_massa_thread
+    tds = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "td.textointernos")))
+  File "C:\Users\Usuario\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+------------------------------------------------------------

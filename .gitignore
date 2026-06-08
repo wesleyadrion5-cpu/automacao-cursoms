@@ -1,0 +1,39 @@
+# PyInstaller e builds de executaveis
+**/build/
+**/dist/
+*.exe
+*.pkg
+*.pyz
+*.spec
+**/installer/
+
+# Python
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ruff_cache/
+
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+
+# Bancos de dados e arquivos temporarios locais
+*.db
+*.db-journal
+*.sqlite3-journal
+
+# Planilhas, relatorios e arquivos de dados locais
+*.csv
+*.xlsx
+*.xls
+*.json
+!**/dona-francisca-automator/**/package.json
+!**/dona-francisca-automator/**/package-lock.json
+!**/dona-francisca-automator/**/tsconfig.json
+!**/dona-francisca-automator/**/metadata.json
+
+# Logs e diagnosticos locais pesados
+logs/
+**/logs/

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Isaura V106 - Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#131b2e",
+                      "on-error": "#690005",
+                      "surface-container-lowest": "#060e20",
+                      "secondary-fixed-dim": "#ffb95f",
+                      "error-container": "#93000a",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "primary-container": "#2563eb",
+                      "inverse-primary": "#0053db",
+                      "on-tertiary-container": "#b1fff1",
+                      "on-surface-variant": "#c3c6d7",
+                      "inverse-surface": "#dae2fd",
+                      "on-tertiary-fixed-variant": "#005048",
+                      "on-surface": "#dae2fd",
+                      "inverse-on-surface": "#283044",
+                      "on-secondary-fixed": "#2a1700",
+                      "surface-bright": "#31394d",
+                      "secondary-fixed": "#ffddb8",
+                      "on-tertiary": "#003731",
+                      "background": "#0b1326",
+                      "surface-dim": "#0b1326",
+                      "on-secondary-container": "#5b3800",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "surface-variant": "#2d3449",
+                      "surface-container-highest": "#2d3449",
+                      "surface": "#0b1326",
+                      "primary": "#b4c5ff",
+                      "on-tertiary-fixed": "#00201c",
+                      "on-secondary-fixed-variant": "#653e00",
+                      "outline-variant": "#434655",
+                      "surface-tint": "#b4c5ff",
+                      "on-primary-container": "#eeefff",
+                      "tertiary-fixed": "#71f8e4",
+                      "tertiary-fixed-dim": "#4fdbc8",
+                      "on-secondary": "#472a00",
+                      "secondary-container": "#ee9800",
+                      "on-error-container": "#ffdad6",
+                      "secondary": "#ffb95f",
+                      "surface-container": "#171f33",
+                      "on-primary": "#002a78",
+                      "tertiary-container": "#007b6e",
+                      "on-primary-fixed": "#00174b",
+                      "primary-fixed": "#dbe1ff",
+                      "on-background": "#dae2fd",
+                      "outline": "#8d90a0",
+                      "tertiary": "#4fdbc8",
+                      "error": "#ffb4ab",
+                      "surface-container-high": "#222a3d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "stack-gap": "12px",
+                      "gutter": "16px",
+                      "card-padding": "20px",
+                      "margin-page": "24px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Space Grotesk"
+                      ],
+                      "body-base": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Space Grotesk"
+                      ],
+                      "log-text": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "11px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-base": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "log-text": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-base overflow-hidden">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center w-full px-6 py-2.5 h-14 bg-slate-950/80 backdrop-blur-md font-['Space_Grotesk'] text-sm tracking-tight docked full-width top-0 z-50 border-b border-white/10 shadow-lg shadow-blue-500/10">
+<div class="text-xl font-black uppercase tracking-tighter text-blue-500">Isaura V106</div>
+<nav class="hidden md:flex items-center gap-6">
+<!-- Navigation hidden as this is a specific dashboard view, but placeholder structure kept per component specs if needed later. Assuming no top nav based on layout request, focusing on side nav -->
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-slate-400 hover:bg-white/5 transition-all duration-200 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+<button class="text-slate-400 hover:bg-white/5 transition-all duration-200 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+</button>
+<button class="text-slate-400 hover:bg-white/5 transition-all duration-200 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">account_circle</span>
+</button>
+<button class="bg-primary-container text-on-primary-container px-4 py-1.5 rounded-DEFAULT font-label-caps text-label-caps hover:bg-inverse-primary transition-colors ml-2">DEPLOY</button>
+</div>
+</header>
+<div class="flex flex-1 overflow-hidden relative">
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-14 bottom-48 w-[280px] bg-slate-900 font-['Space_Grotesk'] uppercase text-xs font-bold tracking-widest border-r border-white/10 flat no shadows flex flex-col py-6 z-30">
+<div class="px-6 mb-8 flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-high border border-outline-variant flex items-center justify-center mb-4 shadow-[0_0_15px_rgba(37,99,235,0.2)]">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">memory</span>
+</div>
+<h2 class="text-on-surface font-headline-md text-headline-md tracking-widest">TITANIUM</h2>
+<p class="text-on-surface-variant font-label-caps text-[9px] mt-1 opacity-70">V106 Command Center</p>
+</div>
+<!-- Status Card in Sidebar -->
+<div class="px-4 mb-6">
+<div class="bg-surface-container border border-outline-variant rounded-lg p-4 flex flex-col items-center text-center">
+<span class="text-on-surface-variant font-label-caps text-label-caps mb-1">Status Base</span>
+<span class="text-primary font-headline-md text-headline-md">0 Módulos Carregados</span>
+</div>
+</div>
+<nav class="flex-1 px-2 space-y-1">
+<a class="flex items-center gap-3 bg-blue-600/10 text-blue-400 border-l-4 border-blue-600 py-3 px-4 transition-all hover:bg-white/5 Active: translate-x-1 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 text-slate-500 hover:text-slate-300 py-3 px-4 transition-colors hover:bg-white/5" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">history</span>
+<span>Histórico BD</span>
+</a>
+<a class="flex items-center gap-3 text-slate-500 hover:text-slate-300 py-3 px-4 transition-colors hover:bg-white/5" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">desktop_windows</span>
+<span>Monitor Remoto</span>
+</a>
+<a class="flex items-center gap-3 text-slate-500 hover:text-slate-300 py-3 px-4 transition-colors hover:bg-white/5" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+<span>Configurações</span>
+</a>
+</nav>
+<div class="px-4 mt-auto mb-4">
+<button class="w-full bg-primary-container text-on-primary-container py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-inverse-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">power_settings_new</span>
+                    INITIALIZE BOT
+                </button>
+</div>
+<div class="border-t border-white/10 pt-4 px-2 space-y-1">
+<a class="flex items-center gap-3 text-slate-500 hover:text-slate-300 py-2 px-4 transition-colors text-[10px]" href="#">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 0;">help_outline</span>
+<span>Support</span>
+</a>
+<a class="flex items-center gap-3 text-slate-500 hover:text-slate-300 py-2 px-4 transition-colors text-[10px]" href="#">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 0;">description</span>
+<span>API Docs</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-[280px] flex-1 overflow-y-auto p-margin-page pb-[220px] bg-surface-container-low">
+<div class="max-w-5xl mx-auto space-y-gutter">
+<!-- Top Section Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Base de Dados Section -->
+<section class="bg-surface border border-outline-variant rounded-lg p-card-padding flex flex-col shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+<div class="flex items-center gap-2 mb-4 border-b border-white/10 pb-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">database</span>
+<h3 class="font-headline-md text-body-base uppercase text-on-surface tracking-wider">Base de Dados</h3>
+</div>
+<div class="flex-1 flex flex-col justify-center items-center p-6 border border-dashed border-outline-variant rounded bg-surface-container-lowest/50 mb-4">
+<p class="text-on-surface-variant font-body-base text-body-base text-center mb-4">Segure CTRL para selecionar múltiplos arquivos</p>
+<button class="bg-surface-bright border border-outline hover:bg-surface-variant text-on-surface py-3 px-6 rounded-DEFAULT font-label-caps text-label-caps transition-colors flex items-center gap-2 w-full justify-center">
+<span class="material-symbols-outlined">upload_file</span>
+                                PLANILHA - VARIOS MODULOS
+                            </button>
+</div>
+</section>
+<!-- Modos de Execução Section -->
+<section class="bg-surface border border-outline-variant rounded-lg p-card-padding flex flex-col shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+<div class="flex items-center gap-2 mb-4 border-b border-white/10 pb-2">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<h3 class="font-headline-md text-body-base uppercase text-on-surface tracking-wider">Modos de Execução</h3>
+</div>
+<div class="flex flex-col gap-stack-gap flex-1 justify-center">
+<button class="bg-[#d97706]/20 border border-[#d97706]/50 hover:bg-[#d97706]/30 text-[#fcd34d] py-3 px-4 rounded-DEFAULT font-label-caps text-label-caps transition-all flex items-center justify-between group">
+<span>PLANILHA ACIMA - SUBIR VARIOS MODULOS</span>
+<span class="material-symbols-outlined opacity-50 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</button>
+<button class="bg-primary-container/20 border border-primary-container/50 hover:bg-primary-container/30 text-primary-fixed py-3 px-4 rounded-DEFAULT font-label-caps text-label-caps transition-all flex items-center justify-between group">
+<span>VIDEO DE UM MODULO</span>
+<span class="material-symbols-outlined opacity-50 group-hover:opacity-100 transition-opacity">smart_display</span>
+</button>
+<button class="bg-tertiary-container/20 border border-tertiary-container/50 hover:bg-tertiary-container/30 text-tertiary-fixed py-3 px-4 rounded-DEFAULT font-label-caps text-label-caps transition-all flex items-center justify-between group">
+<span>MATERIAIS DE UM MODULO</span>
+<span class="material-symbols-outlined opacity-50 group-hover:opacity-100 transition-opacity">folder_zip</span>
+</button>
+<button class="bg-emerald-900/40 border border-emerald-500/50 hover:bg-emerald-800/50 text-emerald-300 py-3 px-4 rounded-DEFAULT font-label-caps text-label-caps transition-all flex items-center justify-between group">
+<span>SUBIR TODO O MODULO</span>
+<span class="material-symbols-outlined opacity-50 group-hover:opacity-100 transition-opacity">cloud_upload</span>
+</button>
+</div>
+</section>
+</div>
+<!-- Global Actions Section -->
+<section class="bg-surface-container border border-outline-variant rounded-lg p-card-padding shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<button class="bg-surface-variant border border-outline-variant hover:bg-surface-bright text-on-surface py-4 px-4 rounded-DEFAULT font-label-caps text-label-caps transition-colors flex flex-col items-center justify-center gap-2 h-full">
+<span class="material-symbols-outlined text-xl">open_in_new</span>
+                            ABRIR CHROME ANTIGO E NOVO
+                        </button>
+<button class="bg-secondary-container/20 border border-secondary-container/50 hover:bg-secondary-container/30 text-secondary-fixed py-4 px-4 rounded-DEFAULT font-label-caps text-label-caps transition-colors flex flex-col items-center justify-center gap-2 h-full">
+<span class="material-symbols-outlined text-xl">build</span>
+                            1 - PREPARAR ROBO
+                        </button>
+<button class="bg-error-container/20 border border-error-container/50 hover:bg-error-container/40 text-error py-4 px-4 rounded-DEFAULT font-headline-md text-body-base uppercase tracking-widest transition-colors flex flex-col items-center justify-center gap-2 h-full relative overflow-hidden group">
+<div class="absolute inset-0 bg-error/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-2xl">rocket_launch</span>
+                            2 - Começar a Escravidão
+                        </button>
+</div>
+</section>
+</div>
+</main>
+</div>
+<!-- Footer / Log Area -->
+<footer class="fixed bottom-0 right-0 left-[280px] h-48 z-40 bg-black/90 backdrop-blur-xl border-t border-white/20 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] flex flex-col p-0 font-log-text">
+<!-- Log Header / Status Bar -->
+<div class="flex items-center justify-between px-4 py-2 border-b border-white/10 bg-surface-container-highest/50">
+<div class="flex items-center gap-4">
+<span class="font-bold text-emerald-500 font-mono text-[10px] tracking-tight uppercase flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    LOG DA ISAURA — SYSTEM STABLE
+                </span>
+<div class="h-4 w-px bg-white/20"></div>
+<span class="text-on-surface-variant text-[11px] uppercase tracking-wider font-bold">Status: Aguardando...</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex gap-3 mr-4">
+<a class="text-slate-500 font-mono text-[10px] tracking-tight uppercase hover:text-white transition-colors" href="#">Clear Terminal</a>
+<a class="text-slate-500 font-mono text-[10px] tracking-tight uppercase hover:text-white transition-colors" href="#">Export Logs</a>
+<a class="text-slate-500 font-mono text-[10px] tracking-tight uppercase hover:text-white transition-colors" href="#">Verbose Mode</a>
+</div>
+<button class="bg-error text-on-error px-4 py-1 rounded-sm font-label-caps text-[10px] hover:bg-red-400 transition-colors flex items-center gap-1 shadow-[0_0_10px_rgba(255,180,171,0.3)]">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">stop_circle</span>
+                    PARAR
+                </button>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-1 bg-surface-container-highest">
+<div class="h-full bg-gradient-to-r from-emerald-600 to-emerald-400 w-0 relative" style="width: 5%;">
+<div class="absolute right-0 top-0 bottom-0 w-2 bg-white/50 blur-[2px]"></div>
+</div>
+</div>
+<!-- Log Content Area -->
+<div class="flex-1 overflow-y-auto p-4 space-y-1 text-log-text">
+<div class="flex gap-3 text-slate-400">
+<span class="text-slate-600 select-none">[10:42:01]</span>
+<span class="text-white">Sistema inicializado. Carregando módulos core...</span>
+</div>
+<div class="flex gap-3 text-slate-400">
+<span class="text-slate-600 select-none">[10:42:02]</span>
+<span class="text-emerald-400">✓ Conexão com banco de dados local estabelecida.</span>
+</div>
+<div class="flex gap-3 text-slate-400">
+<span class="text-slate-600 select-none">[10:42:05]</span>
+<span class="text-[#fcd34d]">Aviso: Monitor remoto não configurado nas preferências.</span>
+</div>
+<div class="flex gap-3 text-slate-400">
+<span class="text-slate-600 select-none">[10:45:12]</span>
+<span class="text-white">Aguardando seleção de planilha ou arquivo de módulo. Pressione os botões acima para iniciar a automação.</span>
+</div>
+<div class="flex gap-3 text-slate-400">
+<span class="text-slate-600 select-none">_</span>
+<span class="text-white animate-pulse">_</span>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,2742 @@
+Mapeamento da página: https://cursoms.com.br/ead/admin/aulas/index.asp
+==================================================
+
+Texto Visível: 'Usuários'
+Destino (URL): https://cursoms.com.br/ead/admin/admin/alunos.asp
+--------------------------------------------------
+Texto Visível: 'Alunos'
+Destino (URL): https://cursoms.com.br/ead/admin/alunos/alunos.asp
+--------------------------------------------------
+Texto Visível: 'Professores'
+Destino (URL): https://cursoms.com.br/ead/admin/professores/professores.asp
+--------------------------------------------------
+Texto Visível: 'Turmas'
+Destino (URL): https://cursoms.com.br/ead/admin/turmas/turmas.asp
+--------------------------------------------------
+Texto Visível: 'Cursos'
+Destino (URL): https://cursoms.com.br/ead/admin/cursos/index.asp
+--------------------------------------------------
+Texto Visível: 'Módulos'
+Destino (URL): https://cursoms.com.br/ead/admin/modulos/index.asp
+--------------------------------------------------
+Texto Visível: 'Aulas'
+Destino (URL): https://cursoms.com.br/ead/admin/aulas/index.asp
+--------------------------------------------------
+Texto Visível: 'Informes'
+Destino (URL): https://cursoms.com.br/ead/admin/noticias/alunos.asp
+--------------------------------------------------
+Texto Visível: 'Fórum'
+Destino (URL): https://cursoms.com.br/ead/admin/forum.asp
+--------------------------------------------------
+Texto Visível: 'Biblioteca'
+Destino (URL): https://cursoms.com.br/ead/admin/biblioteca/alunos.asp
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): https://cursoms.com.br/ead/admin/logout.asp
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): cadastrar.asp
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1013&categoria=1&nomecurso=CETREDE - GUAIUBA – CE - Agente Comunitário de Saúde - ACS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1012&categoria=1&nomecurso=CETREDE - GUAIUBA – CE - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1011&categoria=1&nomecurso=AULÃO VIÇOSA DO CÉARA - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1010&categoria=1&nomecurso=AULÃO SESAPI - PSICÓLOGO 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1009&categoria=1&nomecurso=AULÃO SESAPI - NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1008&categoria=1&nomecurso=AULÃO SESAPI - FARMACÊUTICO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1007&categoria=1&nomecurso=AULÃO SESAPI - FISIOTERAPEUTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1006&categoria=1&nomecurso=AULÃO SESAPI - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1005&categoria=1&nomecurso=AULÃO EUSÉBIO PRESENCIAL - ESPECÍFICA TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1004&categoria=1&nomecurso=AULÃO EUSÉBIO PRESENCIAL - ESPECÍFICA FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1003&categoria=1&nomecurso=AULÃO EUSÉBIO PRESENCIAL - ESPECÍFICA NUTRIÇÃO 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1002&categoria=1&nomecurso=AULÃO DE VÉSPERA EUSÉBIO ON-LINE - CONHECIMENTOS GERAIS	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1001&categoria=1&nomecurso=CURSO TESTE - WESLEY
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=1000&categoria=1&nomecurso=SES/TO - PRÉ - EDITAL - TÉCNICOS DE ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=999&categoria=1&nomecurso=SES/TO - PRÉ - EDITAL - ENFERMEIROS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=998&categoria=1&nomecurso=SES/TO - PRÉ - EDITAL - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=997&categoria=1&nomecurso=AULÃO DE VÉSPERA UFC ON-LINE - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=996&categoria=1&nomecurso=ITAITINGA - CE - Conhecimentos Sobre o Município
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=995&categoria=1&nomecurso=BATURITÉ - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=994&categoria=1&nomecurso=BATURITÉ - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=993&categoria=1&nomecurso=BATURITÉ - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=992&categoria=1&nomecurso=BATURITÉ - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=991&categoria=1&nomecurso=Universidades (IFCE-UNILAB) - Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=990&categoria=1&nomecurso=AULÃO DE VÉSPERA UFC PRESENCIAL/ON-LINE - FARMACÊUTICO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=989&categoria=1&nomecurso=Concurso Público - SES-MG - Conhecimentos Específicos da Área da Saúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=987&categoria=1&nomecurso=Concurso Público - SES-MG - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=986&categoria=1&nomecurso=AULÃO DE VÉSPERA EUSÉBIO PRESENCIAL - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=985&categoria=1&nomecurso=AULÃO DE VÉSPERA EUSÉBIO PRESENCIAL - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=984&categoria=1&nomecurso=AULÃO DE VÉSPERA EUSÉBIO PRESENCIAL - PSICÓLOGO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=983&categoria=1&nomecurso=AULÃO DE VÉSPERA EUSÉBIO PRESENCIAL - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=982&categoria=1&nomecurso=AULÃO DE VÉSPERA EUSÉBIO PRESENCIAL - FISIOTERAPEUTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=981&categoria=1&nomecurso=AULÃO DE VÉSPERA EUSÉBIO PRESENCIAL - ENFERMEIRO PSF
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=980&categoria=1&nomecurso=AULÃO DE VÉSPERA EUSÉBIO PRESENCIAL - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=979&categoria=1&nomecurso=AULÃO DE VÉSPERA UFC PRESENCIAL - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=978&categoria=1&nomecurso=AULÃO DE VÉSPERA UFC PRESENCIAL - ODONTÓLOGO 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=977&categoria=1&nomecurso=AULÃO DE VÉSPERA UFC PRESENCIAL - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=976&categoria=1&nomecurso=AULÃO DE VÉSPERA UFC PRESENCIAL - ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=975&categoria=1&nomecurso=AULÃO DE VÉSPERA UFC PRESENCIAL - FISIOTERAPEUTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=974&categoria=1&nomecurso=AULÃO DE VÉSPERA UFC PRESENCIAL - PSICÓLOGO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=973&categoria=1&nomecurso=AULÃO DE VÉSPERA UFC PRESENCIAL - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=971&categoria=1&nomecurso=ISGH 2026 - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=970&categoria=1&nomecurso=ISGH 2026 - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=969&categoria=1&nomecurso=INTENSIVO CONSULPAM (EUSÉBIO) - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=968&categoria=1&nomecurso=INTENSIVO CONSULPAM (EUSÉBIO) - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=965&categoria=1&nomecurso=INTENSIVO CONSULPAM (EUSÉBIO) - PSICÓLOGO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=964&categoria=1&nomecurso=INTENSIVO CONSULPAM (EUSÉBIO) - NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=963&categoria=1&nomecurso=INTENSIVO CONSULPAM (EUSÉBIO) - ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=962&categoria=1&nomecurso=INTENSIVO CONSULPAM (EUSÉBIO) - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=961&categoria=1&nomecurso=INTENSIVO CONSULPAM (EUSÉBIO) - FISIOTERAPEUTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=960&categoria=1&nomecurso=AMONTADA CE  - AGENTE DE COMBATE ÁS ENDEMIAS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=959&categoria=1&nomecurso=AMONTADA CE  - AGENTE COMUNITÁRIO DE SAÚDE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=958&categoria=1&nomecurso=AMONTADA - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=957&categoria=1&nomecurso=Barbalha CE - Conhecimentos sobre o município  
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=956&categoria=1&nomecurso=ARACATI - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=955&categoria=1&nomecurso=ARACATI - AGENTE COMUNITÁRIO DE SAÚDE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=947&categoria=1&nomecurso=SESA PR - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=946&categoria=1&nomecurso=SESA PR - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=945&categoria=1&nomecurso=SESA PR - ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=944&categoria=1&nomecurso=SESA PR - FARMACÊUTICO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=943&categoria=1&nomecurso=Croatá-CE - Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=942&categoria=1&nomecurso=Croatá-CE - Agente de Endemias
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=941&categoria=1&nomecurso=Croatá-CE - Agente Comunitário de Saúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=940&categoria=1&nomecurso=Croatá-CE - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=939&categoria=1&nomecurso=Croatá-CE - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=938&categoria=1&nomecurso=Croatá-CE - Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=937&categoria=1&nomecurso=Croatá-CE - Farmacêutico Especialidades
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=936&categoria=1&nomecurso=Croatá-CE - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=935&categoria=1&nomecurso=Croatá-CE - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=934&categoria=1&nomecurso=Croatá-CE - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=933&categoria=1&nomecurso=AULÃO DE VÉSPERA BEBERIBE - ENFERMEIRO E TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=932&categoria=1&nomecurso=AULÃO DE VÉSPERA BEBERIBE - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=931&categoria=1&nomecurso=AULÃO DE VÉSPERA BEBERIBE - FISIOTERAPEUTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=930&categoria=1&nomecurso=AULÃO DE VÉSPERA BEBERIBE - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=929&categoria=1&nomecurso=VIÇOSA DO CEARÁ - CONHECIMENTOS SOBRE O MUNICÍPIO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=928&categoria=1&nomecurso=Processo Seletivo Aracati - Ce - TÉCNICO DE ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=927&categoria=1&nomecurso=Processo Seletivo Aracati - Ce - ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=926&categoria=1&nomecurso=Processo Seletivo Aracati - Ce - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=925&categoria=1&nomecurso=AULÃO DE VÉSPERA PMCE - CONHECIMENTOS BÁSICOS PARA TODAS AS ESPECIALIDADES
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=924&categoria=1&nomecurso=AULÃO DE VÉSPERA PMCE - FISIOTERAPIA TRAUMATO-ORTOPÉDICA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=923&categoria=1&nomecurso=AULÃO DE VÉSPERA PMCE - FISIOTERAPIA CARDIORRESPIRATÓRIO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=922&categoria=1&nomecurso=Universidades ( UFC-IFCE-UNILAB) - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=921&categoria=1&nomecurso=Universidades ( UFC-IFCE-UNILAB) - Odontólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=920&categoria=1&nomecurso=Revisão ICC - 2026
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=919&categoria=1&nomecurso=MARANGUAPE - Conhecimentos Sobre o Município
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=918&categoria=1&nomecurso=PMMG - ENFERMEIRO (RMBH)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=917&categoria=1&nomecurso=PMMG - ENFERMEIRO (INTERIOR)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=916&categoria=1&nomecurso=PMMG - PSICÓLOGO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=915&categoria=1&nomecurso=PMMG - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=914&categoria=1&nomecurso=EBSERH 2025 - TÉCNICO EM FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=913&categoria=1&nomecurso=AULÃO ENARE 2026 PRESENCIAL - CONHECIMENTOS BÁSICOS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=912&categoria=1&nomecurso=MORRINHOS - Conhecimentos sobre o município 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=911&categoria=1&nomecurso=2º SIMULADÃO ENARE 2026 ON-LINE - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=910&categoria=1&nomecurso=2º SIMULADÃO ENARE 2026 ON-LINE - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=909&categoria=1&nomecurso=2º SIMULADÃO ENARE 2026 ON-LINE - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=908&categoria=1&nomecurso=2º SIMULADÃO ENARE 2026 ON-LINE - SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=907&categoria=1&nomecurso=2º SIMULADÃO ENARE 2026 ON-LINE - ODONTOLOGIA	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=906&categoria=1&nomecurso=2º SIMULADÃO ENARE 2026 ON-LINE - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=905&categoria=1&nomecurso=2º SIMULADÃO ENARE 2026 ON-LINE - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=904&categoria=1&nomecurso=AULÃO ENARE 2026 - CONHECIMENTOS BÁSICOS - ON-LINE	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=903&categoria=1&nomecurso=AULÃO ENARE 2026 - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=902&categoria=1&nomecurso=AULÃO ENARE 2026 - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=901&categoria=1&nomecurso=AULÃO ENARE 2026 - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=900&categoria=1&nomecurso=AULÃO ENARE 2026 - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=899&categoria=1&nomecurso=AULÃO ENARE 2026 - ODONTOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=898&categoria=1&nomecurso=AULÃO ENARE 2026 - SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=897&categoria=1&nomecurso=AULÃO ENARE 2026 - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=896&categoria=1&nomecurso=SESAPI - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=894&categoria=1&nomecurso=Redenção - CE - Agente comunitário de Saúde 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=893&categoria=1&nomecurso=Redenção - CE - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=892&categoria=1&nomecurso=BATURITÉ - Evolução histórica, geografia 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=891&categoria=1&nomecurso=Banca CCV/UFC/Cetrede/Funcepe - Conhecimentos Gerais OK
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=890&categoria=1&nomecurso=Universidades ( UFC-IFCE- UFCA - UNILAB) - Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=889&categoria=1&nomecurso=Universidades ( UFC-IFCE-UNILAB) - Assistente Social 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=888&categoria=1&nomecurso=Universidades ( UFC-IFCE-UNILAB) - Nutrição
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=885&categoria=1&nomecurso=Universidades ( UFC - IFCE - UFCA - UNILAB) - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=884&categoria=1&nomecurso=ICC 2026 - Políticas Públicas de Saúde / Metodologia Científica e Bioestatística
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=883&categoria=1&nomecurso=PMCE - FISIOTERAPIA TRAUMATO-ORTOPÉDICA 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=882&categoria=1&nomecurso=PMCE - FISIOTERAPIA CARDIORRESPIRATÓRIO 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=881&categoria=1&nomecurso=PMCE - 2º TENENTE DO QUADRO DE OFICIAIS - CONHECIMENTOS BÁSICOS PARA TODAS AS ESPECIALIDADES 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=880&categoria=1&nomecurso=BOA VISTA RR (SMAG) - CONHECIMENTOS GERAIS PARA TODOS OS CARGOS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=878&categoria=1&nomecurso=BOA VISTA RR (SMAG) - CARGO 13: ANALISTA – ESPECIALIDADE: PSICÓLOGO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=877&categoria=1&nomecurso=BOA VISTA RR (SMAG) - CARGO 2: ANALISTA – ESPECIALIDADE: ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=876&categoria=1&nomecurso=BEBERIBE - Conhecimentos Sobre o Município 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=875&categoria=1&nomecurso=SÃO JOÃO DO JAGUARIBE - Conhecimentos Sobre o Município
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=874&categoria=1&nomecurso=PARAMOTI - EVOLUÇÃO HISTÓRICA 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=873&categoria=1&nomecurso=MISSÃO VELHA - CONHECIMENTOS SOBRE O MUNICÍPIO	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=872&categoria=1&nomecurso=INTENSIVO - ENARE 60 DIAS - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=871&categoria=1&nomecurso=INTENSIVO - ENARE 60 DIAS - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=870&categoria=1&nomecurso=INTENSIVO - ENARE 60 DIAS - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=869&categoria=1&nomecurso=INTENSIVO - ENARE 60 DIAS - ODONTOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=868&categoria=1&nomecurso=INTENSIVO - ENARE 60 DIAS - PSICOLOGIA 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=867&categoria=1&nomecurso=INTENSIVO - ENARE 60 DIAS - SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=866&categoria=1&nomecurso=INTENSIVO - ENARE 60 DIAS - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=865&categoria=1&nomecurso=INTENSIVO - ENARE 60 DIAS - CONHECIMENTOS BÁSICOS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=862&categoria=1&nomecurso=CONCURSO PREFEITURA DE TAUÁ - Conhecimentos Específicos - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=861&categoria=1&nomecurso=CONCURSO PREFEITURA DE TAUÁ - Conhecimentos Específicos - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=860&categoria=1&nomecurso=CONCURSO PREFEITURA DE TAUÁ - Conhecimentos Específicos - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=859&categoria=1&nomecurso=CONCURSO PREFEITURA DE TAUÁ - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=858&categoria=1&nomecurso=CREFITO 6 - Conhecimentos Gerais Legislação e Ètica Profissional - Agente Fiscal
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=857&categoria=1&nomecurso=CREFITO 6 - Conhecimentos Gerais - Agente Fiscal 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=856&categoria=1&nomecurso=CREFITO 6 - Conhecimentos Específicos - Agente Fiscal 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=855&categoria=1&nomecurso=ISGH - ENFERMEIRO INTENSIVISTA 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=854&categoria=1&nomecurso=LIMOEIRO DO NORTE - CONHECIMENTOS SOBRE O MUNICÍPIO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=853&categoria=1&nomecurso=ISGH - CIRURGIÃO DENTISTA 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=852&categoria=1&nomecurso=ISGH - ENFERMEIRO OBSTETRA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=851&categoria=1&nomecurso=ISGH - ENFERMEIRO CENTRO CIRURGICO E CME 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=850&categoria=1&nomecurso=PROCESSO SELETIVO MAURITI/CEARÁ - CONHECIMENTOS COMUNS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=849&categoria=1&nomecurso=PROCESSO SELETIVO MAURITI/CEARÁ - ACS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=848&categoria=1&nomecurso=PROCESSO SELETIVO MAURITI/CEARÁ - ACE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=847&categoria=1&nomecurso=1º SIMULADÃO ENARE 2026 ON-LINE - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=846&categoria=1&nomecurso=1º SIMULADÃO ENARE 2026 ON-LINE - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=845&categoria=1&nomecurso=1º SIMULADÃO ENARE 2026 ON-LINE - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=844&categoria=1&nomecurso=1º SIMULADÃO ENARE 2026 ON-LINE - SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=843&categoria=1&nomecurso=1º SIMULADÃO ENARE 2026 ON-LINE - ODONTOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=842&categoria=1&nomecurso=1º SIMULADÃO ENARE 2026 ON-LINE - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=841&categoria=1&nomecurso=1º SIMULADÃO ENARE 2026 ON-LINE - FARMÁCIA 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=840&categoria=1&nomecurso=IPAPORANGA - CONHECIMENTOS SOBRE O MUNICÍPIO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=839&categoria=1&nomecurso=CNU - EIXO TEMÁTICO 5 – SAÚDE E SEGURANÇA DO TRABALHO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=838&categoria=1&nomecurso=CNU - EIXO TEMÁTICO 4 – PREVIDÊNCIA SOCIAL 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=837&categoria=1&nomecurso=CNU - EIXO TEMÁTICO 3 – ASSISTÊNCIA SOCIAL 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=836&categoria=1&nomecurso=CNU - EIXO TEMÁTICO 2 – SAÚDE 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=835&categoria=1&nomecurso=CNU - EIXO TEMÁTICO 1 –  SEGURIDADE SOCIAL 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=832&categoria=1&nomecurso=CNU BLOCO 1 - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=831&categoria=1&nomecurso=Agente Comunitário de Saúde (ACS) e Agente de Combate Às Endemias (ACE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=830&categoria=1&nomecurso=GHC - Odontólogo Buco - Maxilo - Facial
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=829&categoria=1&nomecurso=GHC - Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=828&categoria=1&nomecurso=GHC - Enfermeiro Obstetrícia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=827&categoria=1&nomecurso=GHC - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=826&categoria=1&nomecurso=GHC - Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=825&categoria=1&nomecurso=GHC - Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=824&categoria=1&nomecurso=GHC - Assistente Social 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=823&categoria=1&nomecurso=GHC - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=821&categoria=1&nomecurso=Barra Do Corda - CONHECIMENTOS SOBRE O MUNICÍPIO - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=820&categoria=1&nomecurso=CONCURSO IJF - CONHECIMENTOS GERAIS - SAÚDE PÚBLICA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=819&categoria=1&nomecurso=CONCURSO IJF - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=818&categoria=1&nomecurso=CONCURSO IJF - NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=817&categoria=1&nomecurso=CONCURSO IJF - FARMACÊUTICO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=816&categoria=1&nomecurso=CONCURSO IJF - FISIOTERAPEUTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=815&categoria=1&nomecurso=CONCURSO IJF - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=813&categoria=1&nomecurso=CONCURSO IJF - ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=812&categoria=1&nomecurso=CONCURSO IJF - CONHECIMENTOS GERAIS - LÍNGUA PORTUGUESA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=811&categoria=1&nomecurso=CONCURSO IFCE - PRÉ EDITAL - PSICÓLOGO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=810&categoria=1&nomecurso=Universidades ( UFC-IFCE-UNILAB) - Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=809&categoria=1&nomecurso=Universidades ( UFC-IFCE-UFCA - UNILAB) - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=808&categoria=1&nomecurso=CONCURSO IFCE - PRÉ EDITAL -  GERAL A TODOS OS CARGOS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=804&categoria=1&nomecurso=Concurso Polícia Federal ADM - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=803&categoria=1&nomecurso=AULÃO DE VÉSPERA ISGH ON-LINE - FARMACÊUTICO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=802&categoria=1&nomecurso=AULÃO DE VÉSPERA ISGH ON-LINE - ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=801&categoria=1&nomecurso=AULÃO DE VÉSPERA ISGH ON-LINE - NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=800&categoria=1&nomecurso=AULÃO DE VÉSPERA ISGH ON-LINE - PSICOLÓGO HOSPITALAR
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=799&categoria=1&nomecurso=AULÃO DE VÉSPERA ISGH ON-LINE - FISIOTERAPEUTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=798&categoria=1&nomecurso=AULÃO DE VÉSPERA ISGH ON-LINE - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=797&categoria=1&nomecurso=AULÃO DE VÉSPERA ISGH ON-LINE - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=796&categoria=1&nomecurso=AULÃO DE VÉSPERA ISGH ON-LINE - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=795&categoria=1&nomecurso=Seleção Pública - SMS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=794&categoria=1&nomecurso=INTENSIVÃO - Banca UPA - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=793&categoria=1&nomecurso=INTENSIVÃO - Banca UPA - Conhecimentos Específicos - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=792&categoria=1&nomecurso=INTENSIVÃO - Banca UPA - Conhecimentos Específicos - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=791&categoria=1&nomecurso=INTENSIVÃO - Banca UPA- Conhecimentos Específicos - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=790&categoria=1&nomecurso=Revisão MPCE - Psicologia 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=789&categoria=1&nomecurso=Revisão MPCE - Serviço Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=788&categoria=1&nomecurso=Revisão MPCE - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=787&categoria=1&nomecurso=ISGH - AUXILIAR DE FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=786&categoria=1&nomecurso=Revisão Gratuita Consulpam - Conhecimentos Gerais Quixeramobim
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=785&categoria=1&nomecurso=SESAPI - Farmacêutico 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=784&categoria=1&nomecurso=PRESENCIAL - AULÃO DE VÉSPERA - EBSERH 2025 - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=783&categoria=1&nomecurso=Conhecimentos sobre o Município Tianguá-CE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=782&categoria=1&nomecurso=ON-LINE - AULÃO DE VÉSPERA - EBSERH 2025 - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=781&categoria=1&nomecurso=SEAS - Seleção Pública Temporária 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=780&categoria=1&nomecurso=SESAPI - Assistente Social 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=779&categoria=1&nomecurso=SESAPI - Psicólogo 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=778&categoria=1&nomecurso=SESAPI - Enfermeiro 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=777&categoria=1&nomecurso=SESAPI - Fisioterapeuta 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=775&categoria=1&nomecurso=SESAPI - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=774&categoria=1&nomecurso=CONHECIMENTOS SOBRE O MUNICÍPIO DE  QUIXERAMOBIM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=773&categoria=1&nomecurso=CONCURSO SES - SE - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=772&categoria=1&nomecurso=CONCURSO SES - SE - Conhecimentos Específicos Psicólogo	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=771&categoria=1&nomecurso=CONCURSO SES - SE - Conhecimentos Específicos Técnico de Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=770&categoria=1&nomecurso=CONCURSO SES - SE - Conhecimentos Específicos Enfermeiro Generalista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=768&categoria=1&nomecurso=CONCURSO SES - SE - Conhecimentos Específicos Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=767&categoria=1&nomecurso=CONCURSO SES - SE - Conhecimentos Específicos Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=766&categoria=1&nomecurso=CONCURSO SES - SE - Conhecimentos Específicos Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=765&categoria=1&nomecurso=CONCURSO SES - SE - Conhecimentos Específicos Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=764&categoria=1&nomecurso=COMBO AULÃO + RETA FINAL - EBSERH 2025 - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=763&categoria=1&nomecurso=COMBO AULÃO + RETA FINAL - EBSERH 2025 - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=762&categoria=1&nomecurso=COMBO AULÃO + RETA FINAL - EBSERH 2025 - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=761&categoria=1&nomecurso=COMBO AULÃO + RETA FINAL - EBSERH 2025 - NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=760&categoria=1&nomecurso=COMBO AULÃO + RETA FINAL - EBSERH 2025 - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=759&categoria=1&nomecurso=COMBO AULÃO + RETA FINAL - EBSERH 2025 - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=758&categoria=1&nomecurso=COMBO AULÃO + RETA FINAL - EBSERH 2025 - TÉCNICO EM ENFERMAGEM		
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=757&categoria=1&nomecurso=COMBO AULÃO + RETA FINAL - EBSERH 2025 - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=756&categoria=1&nomecurso=RETA FINAL - EBSERH 2025 - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=755&categoria=1&nomecurso=RETA FINAL - EBSERH 2025 - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=754&categoria=1&nomecurso=RETA FINAL - EBSERH 2025 - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=753&categoria=1&nomecurso=RETA FINALL - EBSERH 2025 - NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=752&categoria=1&nomecurso=RETA FINAL - EBSERH 2025 - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=751&categoria=1&nomecurso=RETA FINAL - EBSERH 2025 - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=750&categoria=1&nomecurso=RETA FINAL - EBSERH 2025 - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=749&categoria=1&nomecurso=RETA FINAL - EBSERH 2025 - PSICÓLOGIA	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=747&categoria=1&nomecurso=AULÃO PRESENCIAL - EBSERH 2025 - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=746&categoria=1&nomecurso=AULÃO PRESENCIAL - EBSERH 2025 - FARMÁCIA	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=745&categoria=1&nomecurso=AULÃO PRESENCIAL - EBSERH 2025 - NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=744&categoria=1&nomecurso=AULÃO PRESENCIAL - EBSERH 2025 - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=743&categoria=1&nomecurso=AULÃO PRESENCIAL - EBSERH 2025 - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=742&categoria=1&nomecurso=AULÃO PRESENCIAL - EBSERH 2025 - TÉCNICO EM ENFERMAGEM	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=741&categoria=1&nomecurso=AULÃO PRESENCIAL - EBSERH 2025 - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=740&categoria=1&nomecurso=Concurso - SEASIC-SE - Psicólogo 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=739&categoria=1&nomecurso=Concurso - SEASIC-SE - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=738&categoria=1&nomecurso=Concurso - SEASIC-SE - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=737&categoria=1&nomecurso=Concurso - SEASIC-SE - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=736&categoria=1&nomecurso=MPCE - CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=735&categoria=1&nomecurso=MPCE - ANALISTA MINISTERIAL - PSICOLOGIA 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=734&categoria=1&nomecurso=Aulão de Véspera - Assistente em Administração - Concurso Público UFC
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=733&categoria=1&nomecurso=Perito Médico -  Concurso INSS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=732&categoria=1&nomecurso=São Benedito - Atualidades e Convivência Societária
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=731&categoria=1&nomecurso=Aulão de Véspera João Pessoa ACE e ACS - Banca Idecan - Conhecimentos Gerais e Específicos 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=730&categoria=1&nomecurso=Aulão de Véspera Eusébio - Banca Consulpam - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=729&categoria=1&nomecurso=Aulão de Véspera Pindoretama - Banca Consulpam - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=727&categoria=1&nomecurso=Intensivão Ebserh - Conhecimentos Específicos Enfermeiro - BÔNUS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=726&categoria=1&nomecurso=Intensivão Ebserh - Conhecimentos Específicos Farmacêutico - BÔNUS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=725&categoria=1&nomecurso=Língua Portuguesa para EBSERH - 2026
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=724&categoria=1&nomecurso=Raciocínio Lógico e Matemática para EBSERH - 2025
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=723&categoria=1&nomecurso=EBSERH 2025 - CIRURGIÃO - DENTISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=722&categoria=1&nomecurso=EBSERH 2025 - TÉCNICO EM RADIOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=721&categoria=1&nomecurso=EBSERH 2025 - FARMACÊUTICO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=720&categoria=1&nomecurso=EBSERH 2025 - ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=719&categoria=1&nomecurso=EBSERH 2025 - PSICÓLOGO HOSPITALAR
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=718&categoria=1&nomecurso=EBSERH 2025 - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=717&categoria=1&nomecurso=EBSERH 2025 - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=716&categoria=1&nomecurso=EBSERH 2025 - NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=715&categoria=1&nomecurso=EBSERH 2025 - FISIOTERAPEUTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=714&categoria=1&nomecurso=Correios - Conhecimentos Gerais - Analista de Correios 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=713&categoria=1&nomecurso=Correios - Assistente Social - Analista de Correios 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=712&categoria=1&nomecurso=Conhecimentos do Município de Morada Nova - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=710&categoria=1&nomecurso=UFC - Cargo: Assistente em Administração 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=709&categoria=1&nomecurso=UFC - Assistente em Administração - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=708&categoria=1&nomecurso=2º SIMULADÃO ENARE ON-LINE - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=707&categoria=1&nomecurso=2º SIMULADÃO ENARE ON-LINE - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=706&categoria=1&nomecurso=2º SIMULADÃO ENARE ON-LINE - ODONTOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=705&categoria=1&nomecurso=2º SIMULADÃO ENARE ON-LINE - SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=704&categoria=1&nomecurso=2º SIMULADÃO ENARE ON-LINE - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=703&categoria=1&nomecurso=2º SIMULADÃO ENARE ON-LINE - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=702&categoria=1&nomecurso=2º SIMULADÃO ENARE ON-LINE - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=701&categoria=1&nomecurso=ADAGRI - CONHECIMENTOS GERAIS – MÉDICO VETERINÁRIO (TÉORICO)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=700&categoria=1&nomecurso=ADAGRI - AUDITOR FISCAL AGROPECUÁRIO – MÉDICO VETERINÁRIO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=699&categoria=1&nomecurso=Rede Sarah - Técnico em Radiologia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=698&categoria=1&nomecurso=SANTA QUITERIA - CONHECIMENTOS SOBRE O MUNICÍPIO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=697&categoria=1&nomecurso=Santa Quitéria - Conhecimentos Gerais - Banca Consulpam	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=696&categoria=1&nomecurso=Santa Quitéria - Psicológo - Banca Consulpam	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=695&categoria=1&nomecurso=Santa Quitéria - Nutricionista - Banca Consulpam	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=694&categoria=1&nomecurso=Santa Quitéria - Fisioterapeuta - Banca Consulpam	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=693&categoria=1&nomecurso=Santa Quitéria - Farmacêutico - Banca Consulpam	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=692&categoria=1&nomecurso=Santa Quitéria - Enfermeiro - Banca Consulpam	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=691&categoria=1&nomecurso=Santa Quitéria - Dentista - Banca Consulpam	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=690&categoria=1&nomecurso=Santa Quitéria - Assistente Social - Banca Consulpam	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=689&categoria=1&nomecurso=Santa Quitéria - Técnico de Enfermagem - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=688&categoria=1&nomecurso=PB SAÚDE -  ENFERMEIRO INTENSIVISTA ADULTO/ PEDIÁTRICO - BANCA IDECAN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=686&categoria=1&nomecurso=PB SAÚDE - TÉCNICO EM FARMÁCIA - BANCA IDECAN	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=685&categoria=1&nomecurso=PB SAÚDE - ENFERMEIRO ONCOLOGISTA - BANCA IDECAN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=684&categoria=1&nomecurso=PB SAÚDE - ENFERMEIRO OBSTETRA - BANCA IDECAN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=683&categoria=1&nomecurso=PB SAÚDE - ENFERMEIRO AUDITOR - BANCA IDECAN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=682&categoria=1&nomecurso=PB SAÚDE - CONHECIMENTOS GERAIS - BANCA IDECAN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=681&categoria=1&nomecurso=PB SAÚDE - ASSISTENTE SOCIAL - BANCA IDECAN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=680&categoria=1&nomecurso=PB SAÚDE - FISIOTERAPEUTA - BANCA IDECAN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=679&categoria=1&nomecurso=SESAPI - Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=678&categoria=1&nomecurso=PB SAÚDE - ENFERMEIRO - BANCA IDECAN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=677&categoria=1&nomecurso=ISGH - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=676&categoria=1&nomecurso=ISGH - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=675&categoria=1&nomecurso=ISGH - ASSISTENTE SOCIAL 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=674&categoria=1&nomecurso=ISGH - FISIOTERAUPETA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=673&categoria=1&nomecurso=ISGH - PSICOLÓGO HOSPITALAR
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=672&categoria=1&nomecurso=ISGH - NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=671&categoria=1&nomecurso=ISGH - ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=670&categoria=1&nomecurso=ISGH - FARMACÊUTICO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=669&categoria=1&nomecurso=CIRURGIÃO DENTISTA - BANCA CONSULPAM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=668&categoria=1&nomecurso=CRATEÚS - CONHECIMENTOS SOBRE O MUNICÍPIO 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=667&categoria=1&nomecurso=INTENSIVO ICC 2026 - Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=666&categoria=1&nomecurso=RETA FINAL ICC 2025 - Políticas Públicas de Saúde / Metodologia Científica e Bioestatística
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=665&categoria=1&nomecurso=AULÃO ENARE 2025 - SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=664&categoria=1&nomecurso=AULÃO ENARE 2025 - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=663&categoria=1&nomecurso=AULÃO ENARE 2025 - ODONTOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=662&categoria=1&nomecurso=AULÃO ENARE 2025 - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=661&categoria=1&nomecurso=AULÃO ENARE 2025 - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=660&categoria=1&nomecurso=AULÃO ENARE 2025 - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=659&categoria=1&nomecurso=AULÃO ENARE 2025 - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=658&categoria=1&nomecurso=AULÃO ENARE 2025 - CONHECIMENTOS BÁSICOS - ON-LINE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=657&categoria=1&nomecurso=RETA FINAL COMBO - ENARE - SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=656&categoria=1&nomecurso=RETA FINAL COMBO - ENARE - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=655&categoria=1&nomecurso=RETA FINAL COMBO - ENARE - ODONTOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=654&categoria=1&nomecurso=RETA FINAL COMBO - ENARE - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=653&categoria=1&nomecurso=RETA FINAL COMBO - ENARE - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=652&categoria=1&nomecurso=RETA FINAL COMBO - ENARE - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=651&categoria=1&nomecurso=RETA FINAL  COMBO - ENARE - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=650&categoria=1&nomecurso=RETA FINAL COMBO - ENARE - CONHECIMENTOS BÁSICOS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=649&categoria=1&nomecurso=Aulão de Véspera TRT - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=648&categoria=1&nomecurso=Aulão de Véspera TRT - Serviço Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=647&categoria=1&nomecurso=Aulão de Véspera TRT - Psicologia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=646&categoria=1&nomecurso=RETA FINAL - ENARE - SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=645&categoria=1&nomecurso=RETA FINAL - ENARE - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=644&categoria=1&nomecurso=RETA FINAL - ENARE - ODONTOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=643&categoria=1&nomecurso=RETA FINAL - ENARE - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=642&categoria=1&nomecurso=RETA FINAL - ENARE - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=641&categoria=1&nomecurso=RETA FINAL - ENARE - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=640&categoria=1&nomecurso=RETA FINAL - ENARE - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=639&categoria=1&nomecurso=RETA FINAL - ENARE - CONHECIMENTOS BÁSICOS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=638&categoria=1&nomecurso=APOSTILA PACATUBA - ENFERMEIRO OBSTETRA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=637&categoria=1&nomecurso=Conhecimentos do Município de Eusébio - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=636&categoria=1&nomecurso=Concurso dos Correios - Enfermeiro do Trabalho Júnior
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=635&categoria=1&nomecurso=Prefeitura de João Pessoa - ACS e ACE Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=634&categoria=1&nomecurso=Prefeitura de João Pessoa - ACS e ACE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=633&categoria=1&nomecurso=Pacatuba - Conhe.do Município - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=632&categoria=1&nomecurso=SIMULADÃO ENARE ON-LINE - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=631&categoria=1&nomecurso=SIMULADÃO ENARE ON-LINE - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=630&categoria=1&nomecurso=SIMULADÃO ENARE ON-LINE- FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=629&categoria=1&nomecurso=SIMULADÃO ENARE ON-LINE - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=628&categoria=1&nomecurso=SIMULADÃO ENARE ON-LINE - SERVÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=627&categoria=1&nomecurso=SIMULADÃO ENARE ON-LINE - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=626&categoria=1&nomecurso=SIMULADÃO ENARE ON-LINE - ODONTOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=625&categoria=1&nomecurso=SIMULADÃO ENARE PRESENCIAL - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=624&categoria=1&nomecurso=SIMULADÃO ENARE PRESENCIAL - PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=623&categoria=1&nomecurso=SIMULADÃO ENARE PRESENCIAL - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=622&categoria=1&nomecurso=SIMULADÃO ENARE PRESENCIAL - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=621&categoria=1&nomecurso=SIMULADÃO ENARE PRESENCIAL - SERVÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=620&categoria=1&nomecurso=SIMULADÃO ENARE PRESENCIAL - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=619&categoria=1&nomecurso=SIMULADÃO ENARE PRESENCIAL - ODONTOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=618&categoria=1&nomecurso=Língua Portuguesa Rede SARAH - 2026
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=617&categoria=1&nomecurso=Rede Sarah - Assistentes Socias
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=616&categoria=1&nomecurso=Banca Cetrede/Funcepe - Odontólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=615&categoria=1&nomecurso=Atualidades e Convivência Societária - Ubajara - Banca Cetrede
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=614&categoria=1&nomecurso=Conhecimentos do Município de Pindoretama - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=613&categoria=1&nomecurso=INTENSIVÃO - FORTIM/CE - Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=612&categoria=1&nomecurso=INTENSIVÃO - FORTIM/CE - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=611&categoria=1&nomecurso=INTENSIVÃO - FORTIM/CE - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=610&categoria=1&nomecurso=INTENSIVÃO - FORTIM/CE - Enfermeiro PSF
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=609&categoria=1&nomecurso=INTENSIVÃO -  FORTIM/CE - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=608&categoria=1&nomecurso=REVISÃO - PREFEITURA DE JIJOCA DE JERICOACOARA-CE - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=607&categoria=1&nomecurso=Conhecimentos do Município de Guaraciaba do Norte - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=605&categoria=1&nomecurso=APC 3.0 - Legislação Aplicada: SUS e EBSERH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=604&categoria=1&nomecurso=Intensivo - Concurso TRT CE - Analista Judiciário - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=603&categoria=1&nomecurso=Intensivo - Concurso TRT CE - Analista Judiciário - Especialidade Psicologia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=602&categoria=1&nomecurso=Intensivo - Concurso TRT CE - Analista Judiciário - Especialidade Serviço Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=601&categoria=1&nomecurso=Aulão de Véspera SEAS - Socioeducador, Assistente Social, Psicólogo e Pedagogo - PRESENCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=600&categoria=1&nomecurso=SESAU AL  - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=599&categoria=1&nomecurso=SESAU AL  - PSICÓLOGO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=598&categoria=1&nomecurso=SESAU AL -  ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=597&categoria=1&nomecurso=SESAU AL  - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=596&categoria=1&nomecurso=INTENSIVÃO - CONCURSO PÚBLICO IPUEIRAS/CE - Enfermeiro PSF
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=595&categoria=1&nomecurso=INTENSIVÃO - CONCURSO PÚBLICO IPUEIRAS/CE - Conhecimentos Gerais - Nível Superior 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=594&categoria=1&nomecurso=CONCURSO PÚBLICO - IPUEIRAS/CE - Conhecimentos Específicos - ACE e ACS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=593&categoria=1&nomecurso=CONCURSO PÚBLICO - IPUEIRAS/CE - Conhecimentos Gerais - ACE e ACS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=592&categoria=1&nomecurso=Conhecimento Específico APC Serviço Social 3.0
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=591&categoria=1&nomecurso=Conhecimento Específico APC Enfermagem 3.0
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=590&categoria=1&nomecurso=Conhecimento Específico APC Fisioterapia 3.0
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=589&categoria=1&nomecurso=Conhecimento Específico APC Nutrição 3.0
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=588&categoria=1&nomecurso=Conhecimento Específico APC Psicologia 3.0
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=587&categoria=1&nomecurso=Conhecimento Específico APC Farmácia 3.0
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=586&categoria=1&nomecurso=APC TURMA 3.0 - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=585&categoria=1&nomecurso=APC TURMA 3.0 - Políticas de Saúde Pública/Epidemiologia	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=584&categoria=1&nomecurso=INTENSIVÃO - PREFEITURA DE JIJOCA DE JERICOACOARA- Conhecimentos Específicos - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=583&categoria=1&nomecurso=INTENSIVÃO - PREFEITURA DE JIJOCA DE JERICOACOARA-CE - Conhecimentos Específicos - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=582&categoria=1&nomecurso=INTENSIVÃO - PREFEITURA DE JIJOCA DE JERICOACOARA-CE - Conhecimentos Específicos - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=581&categoria=1&nomecurso=INTENSIVÃO - PREFEITURA DE JIJOCA DE JERICOACOARA-CE - CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=580&categoria=1&nomecurso=Revisão de Véspera SDHDS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=579&categoria=1&nomecurso=APC 3.0 - Para Residências - Políticas Públicas de Saúde 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=578&categoria=1&nomecurso=APC 3.0 - Tribunais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=577&categoria=1&nomecurso=Concurso TJCE - Conhecimentos Gerais- Pré Edital
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=576&categoria=1&nomecurso=Concurso TJCE - Psicólogo- Pré Edital
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=575&categoria=1&nomecurso=Concurso TJCE - Serviço Social - Pré Edital
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=574&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Psicólogo (Presencial + Gerais On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=573&categoria=1&nomecurso=RETA FINAL - Prefeitura Municipal de Itapajé - CE - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=572&categoria=1&nomecurso=RETA FINAL - Prefeitura Municipal de Itapajé - CE - Conhecimentos Específicos - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=571&categoria=1&nomecurso=RETA FINAL - Prefeitura Municipal de Itapajé - CE - Conhecimentos Específicos - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=570&categoria=1&nomecurso=RETA FINAL - Prefeitura Municipal de Itapajé - CE - Conhecimentos Específicos - Assistente Social 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=569&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Técnico em Enfermagem (Presencial + Gerais On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=568&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Assistente Social (Presencial + Gerais On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=567&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Fisioterapeuta (Presencial + Gerais On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=566&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Enfermeiro (Presencial + Gerais On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=565&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Farmacêutico (Presencial + Gerais On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=564&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Gerais (On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=563&categoria=1&nomecurso=Intensivão SDHDS - 2025
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=561&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Técnico em Enfermagem (On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=560&categoria=1&nomecurso=Concurso FMS de Teresina - BANCA IDECAN - Conhecimentos Específicos para ENFERMEIRO - ESF
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=559&categoria=1&nomecurso=Concurso FMS de Teresina - PI - BANCA IDECAN - Conhecimentos Específicos para ASSISTENTE TÉCNICO DE SAÚDE - TÉCNICO EM ENFERMAGEM ESF
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=557&categoria=1&nomecurso=Concurso FMS de Teresina - PI - BANCA IDECAN - Conhecimentos Específicos para TÉCNICO DE NÍVEL SUPERIOR - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=556&categoria=1&nomecurso=Concurso FMS de Teresina - PI- BANCA IDECAN - Conhecimentos Específicos para TÉCNICO DE NÍVEL SUPERIOR - PSICÓLOGO GENERALISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=555&categoria=1&nomecurso=Concurso FMS de Teresina - PI - BANCA IDECAN - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=554&categoria=1&nomecurso=CONCURSO PÚBLICO - TJSC - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=553&categoria=1&nomecurso=REVISÃO CMF – CONHECIMENTOS GERAIS  - ON-LINE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=552&categoria=1&nomecurso=REVISÃO CMF – CONSULTOR LEGISLATIVO SAÚDE PÚBLICA - ON-LINE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=551&categoria=1&nomecurso=Aulão de Véspera Horizonte - Conhecimentos Gerais On-line
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=550&categoria=1&nomecurso=CONCURSO SEDUC-RECIFE-PE - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=548&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Gerais (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=547&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos para Cirurgião Dentista (On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=546&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos para Nutricionistas (On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=545&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Farmacêutico (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=544&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Enfermeiro (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=543&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Técnico em Enfermagem (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=542&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Psicólogo (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=541&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Fisioterapeuta (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=540&categoria=1&nomecurso=Aulão de Véspera Fagifor - Conhecimentos Específicos de Assistente Social (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=539&categoria=1&nomecurso=SIMULA FAGIFOR - NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=538&categoria=1&nomecurso=SIMULA FAGIFOR - PSICÓLOGO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=537&categoria=1&nomecurso=SIMULA FAGIFOR - FISIOTERAPEUTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=536&categoria=1&nomecurso=SIMULA FAGIFOR - FARMACÊUTICO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=535&categoria=1&nomecurso=SIMULA FAGIFOR - ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=534&categoria=1&nomecurso=SIMULA FAGIFOR - ASSISTENTE SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=533&categoria=1&nomecurso=SIMULA FAGIFOR - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=532&categoria=1&nomecurso=Aulão de Véspera Horizonte - Conhecimentos Gerais (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=531&categoria=1&nomecurso=Aulão de Véspera Horizonte - Conhecimentos Específicos de Serviço Social (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=530&categoria=1&nomecurso=Aulão de Véspera Horizonte - Conhecimentos Específicos de Fisioterapia (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=529&categoria=1&nomecurso=Aulão de Véspera Horizonte - Conhecimentos Específicos para Enfermagem (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=528&categoria=1&nomecurso=Aulão de Véspera Horizonte - Conhecimentos Específicos para Psicólogo (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=527&categoria=1&nomecurso=CONCURSO PÚBLICO PREFEITURA MUNICIPAL DE TERESINA-PI SEMEC - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=526&categoria=1&nomecurso=CONCURSO PÚBLICO PREFEITURA MUNICIPAL DE TERESINA-PI SEMEC - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=525&categoria=1&nomecurso=CONCURSO PÚBLICO PREFEITURA MUNICIPAL DE TERESINA-PI SEMEC - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=524&categoria=1&nomecurso=Aulão de Véspera Resmulti 2024 - Psicologia - On-line
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=523&categoria=1&nomecurso=Aulão de Véspera Resmulti 2024 - Serviço Social - On-line
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=522&categoria=1&nomecurso=Aulão de Véspera Resmulti 2024 - Enfermagem - On-line
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=521&categoria=1&nomecurso=Aulão de Véspera Resmulti 2024 - Nutrição - On-line
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=520&categoria=1&nomecurso=Aulão de Véspera Resmulti 2024 - Fisioterapia- On-line
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=518&categoria=1&nomecurso=Aulão de Véspera Resmulti 2024 - Farmácia - On-line
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=517&categoria=1&nomecurso=Aulão de Véspera Resmulti 2024  - Políticas Públicas de Saúde - On-line
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=516&categoria=1&nomecurso=AULÃO DE VÉSPERA CAUCAIA - TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=515&categoria=1&nomecurso=Banca IBFC - Conhecimentos Específicos Técnico em Radiologia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=514&categoria=1&nomecurso=Banca IBFC - Conhecimentos Específicos Auxiliar de Farmácia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=513&categoria=1&nomecurso=Banca IBFC - Conhecimentos Específicos Cirurgião Dentista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=512&categoria=1&nomecurso=FAGIFOR EM CASA CONHECIMENTOS GERAIS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=511&categoria=1&nomecurso=FAGIFOR EM CASA TÉCNICO EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=510&categoria=1&nomecurso=FAGIFOR EM CASA FARMACÊUTICO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=509&categoria=1&nomecurso=FAGIFOR EM CASA SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=508&categoria=1&nomecurso=FAGIFOR EM CASA FISIOTERAPEUTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=507&categoria=1&nomecurso=FAGIFOR EM CASA NUTRICIONISTA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=506&categoria=1&nomecurso=FAGIFOR EM CASA PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=505&categoria=1&nomecurso=FAGIFOR EM CASA ENFERMEIRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=504&categoria=1&nomecurso=Aulão de Véspera Caucaia - Conhecimentos Gerais (On-Line)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=503&categoria=1&nomecurso=Aulão de Véspera Caucaia - Conhecimentos Específicos de Enfermeiro (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=502&categoria=1&nomecurso=Aulão de Véspera Caucaia - Conhecimentos Específicos de Assistente Social (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=501&categoria=1&nomecurso=Aulão de Véspera Caucaia - Conhecimentos Específicos de Psicólogo (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=500&categoria=1&nomecurso=Aulão de Véspera Caucaia - Conhecimentos Específicos de Nutricionista (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=499&categoria=1&nomecurso=Aulão de Véspera Caucaia - Conhecimentos Específicos de Fisioterapeuta (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=498&categoria=1&nomecurso=Aulão de Véspera Caucaia - Conhecimentos Específicos de Farmacêutico (Presencial)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=497&categoria=1&nomecurso=Banca IBFC - Conhecimentos Gerais - Raciocínio Lógico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=496&categoria=1&nomecurso=Curso Preparatório para Câmara Municipal de Fortaleza-CE - Conhecimentos Gerais - Online - Nível Médio 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=495&categoria=1&nomecurso=Técnico de Enfermagem - Concurso Mossoró/RN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=494&categoria=1&nomecurso=Enfermeiro - Concurso Mossoró/RN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=493&categoria=1&nomecurso=Psicólogo - Concurso Mossoró/RN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=492&categoria=1&nomecurso=Assistente Social - Concurso Mossoró/RN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=491&categoria=1&nomecurso=Agente de Combate às Endemias - Concurso Mossoró /RN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=490&categoria=1&nomecurso=Agente Comunitário de Saúde - Concurso  Mossoró /RN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=489&categoria=1&nomecurso=Conhecimentos Gerais - Concurso Mossoró/RN 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=488&categoria=1&nomecurso=Aulão de Véspera Caucaia - Conhecimentos Específicos de Nutrição (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=487&categoria=1&nomecurso=Aulão de Véspera Caucaia - Conhecimentos Específicos de Farmácia (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=486&categoria=1&nomecurso=Aulão de Véspera Caucaia - Conhecimentos Específicos de Enfermagem (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=485&categoria=1&nomecurso=Aulão de Véspera CAUCAIA - Conhecimentos Específicos de Serviço Social (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=484&categoria=1&nomecurso=Aulão de Véspera CAUCAIA - Conhecimentos Específicos de Fisioterapia (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=483&categoria=1&nomecurso=Aulão de Véspera CAUCAIA - Conhecimentos Específicos de Psicologia (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=482&categoria=1&nomecurso=Aulão de Véspera CAUCAIA - Conhecimentos Gerais (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=480&categoria=1&nomecurso=Curso Preparatório para Câmara Municipal de Fortaleza-CE - Consultor Legislativo - Área Saúde Pública (Específica)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=477&categoria=1&nomecurso=Curso Preparatório para Câmara Municipal de Fortaleza-CE - Conhecimentos Gerais - Online
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=475&categoria=1&nomecurso=Aulão de Véspera Ebserh - Conhecimentos Gerais - On-Line
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=474&categoria=1&nomecurso=Concurso Prefeitura Municipal de Tabuleiro do Norte - Conhecimentos Regionais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=473&categoria=1&nomecurso=APOSTILA EBSERH - ENFERMEIRO - TERAPIA INTENSIVA NEONATAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=472&categoria=1&nomecurso=Aulão de Véspera Ebserh - Conhecimentos Específicos de Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=471&categoria=1&nomecurso=Aulão de Véspera Ebserh - Conhecimentos Específicos de Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=470&categoria=1&nomecurso=Aulão de Véspera Ebserh - Conhecimentos Específicos de Psicólogo Hospitalar
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=469&categoria=1&nomecurso=Aulão de Véspera Ebserh - Conhecimentos Específicos de Nutrição
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=468&categoria=1&nomecurso=Aulão de Véspera Ebserh - Conhecimentos Específicos de Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=467&categoria=1&nomecurso=Aulão de Véspera Ebserh - Conhecimentos Específicos de Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=466&categoria=1&nomecurso=Aulão de Véspera Ebserh - Conhecimentos Específicos de Fisioterapia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=465&categoria=1&nomecurso=Aulão de Véspera Ebserh - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=464&categoria=1&nomecurso=APOSTILA EBSERH - ENFERMEIRO SAÚDE DA MULHER E ENFERMEIRO OBSTETRA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=463&categoria=1&nomecurso=Aulão da Aprovação Resmulti e Enare - Conhecimentos Gerais -  Políticas Públicas de Saúde - ON-LINE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=462&categoria=1&nomecurso=ACS - Processo Seletivo Caucaia/CE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=461&categoria=1&nomecurso=ACE - Concurso Caucaia/CE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=460&categoria=1&nomecurso=PESQUISA EM ENFERMAGEM E PRÁTICA BASEADA EM EVIDÊNCIAS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=459&categoria=1&nomecurso=Banca Cetrede/Funcepe - Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=458&categoria=1&nomecurso=Banca CCV/UFC/Cetrede/Funcepe - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=457&categoria=1&nomecurso=Banca CCV/UFC/Cetrede/Funcepe - Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=456&categoria=1&nomecurso=Banca Cetrede/Funcepe - Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=455&categoria=1&nomecurso=Banca Cetrede/Funcepe - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=454&categoria=1&nomecurso=Processo Seletivo - Prefeitura de Horizonte - Conhecimentos Específicos - Agente de Combate ÀS Endemias
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=453&categoria=1&nomecurso=Processo Seletivo - Prefeitura de Horizonte - Conhecimentos Específicos - Agente Comunitário de Saúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=452&categoria=1&nomecurso=Processo Seletivo - Prefeitura de Horizonte - Conhecimentos Gerais (ACE e ACS)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=451&categoria=1&nomecurso=2º SIMULA RESMULTI 2024 - ODONTOLOGIA (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=450&categoria=1&nomecurso=Revisão ICC - 2024
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=449&categoria=1&nomecurso=Aulão da Aprovação Resmulti e Enare - Conhecimentos Específicos Políticas Públicas de Saúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=448&categoria=1&nomecurso=Aulão da Aprovação Resmulti e Enare - Conhecimentos Específicos Nutrição
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=447&categoria=1&nomecurso=Aulão da Aprovação Resmulti e Enare - Conhecimentos Específicos Psicologia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=446&categoria=1&nomecurso=Aulão da Aprovação Resmulti e Enare - Conhecimentos Específicos Fisioterapia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=445&categoria=1&nomecurso=Aulão da Aprovação Resmulti e Enare - Conhecimentos Específicos Serviço Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=444&categoria=1&nomecurso=Aulão da Aprovação Resmulti e Enare - Conhecimentos Específicos Farmácia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=443&categoria=1&nomecurso=Aulão da Aprovação Resmulti e Enare - Conhecimentos Específicos Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=442&categoria=1&nomecurso=2º SIMULA RESMULTI 2024 - FARMÁCIA (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=441&categoria=1&nomecurso=2º SIMULA RESMULTI 2024 - SERVIÇO SOCIAL (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=440&categoria=1&nomecurso=2º SIMULA RESMULTI 2024 - ENFERMAGEM (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=439&categoria=1&nomecurso=2º SIMULA RESMULTI 2024 - NUTRIÇÃO (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=438&categoria=1&nomecurso=2º SIMULA RESMULTI 2024 - FISIOTERAPIA (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=437&categoria=1&nomecurso=2º SIMULA RESMULTI 2024 - PSICÓLOGO (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=436&categoria=1&nomecurso=Intensivão Ebserh - Conhecimentos Específicos Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=435&categoria=1&nomecurso=Intensivão Ebserh - Conhecimentos Específicos Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=434&categoria=1&nomecurso=Intensivão Ebserh - Conhecimentos Específicos Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=433&categoria=1&nomecurso=Intensivão Ebserh - Conhecimentos Específicos Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=432&categoria=1&nomecurso=Intensivão Ebserh - Conhecimentos Específicos Psicólogo Hospitalar
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=431&categoria=1&nomecurso=Concurso de Horizonte - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=430&categoria=1&nomecurso=RETA FINAL - RESMULTI CE E ENARE 2024 - Políticas Públicas de Saúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=429&categoria=1&nomecurso=RETA FINAL - RESMULTI CE E ENARE 2024 - Conhecimentos Específicos de Serviço Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=428&categoria=1&nomecurso=RETA FINAL - RESMULTI CE E ENARE 2024 - Conhecimentos Específicos de Psicologia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=427&categoria=1&nomecurso=RETA FINAL - RESMULTI CE E ENARE 2024 - Conhecimentos Específicos de Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=426&categoria=1&nomecurso=RETA FINAL - RESMULTI CE E ENARE 2024 - Conhecimentos Específicos de Fisioterapia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=425&categoria=1&nomecurso=RETA FINAL - RESMULTI CE E ENARE 2024 - Conhecimentos Específicos de Farmácia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=424&categoria=1&nomecurso=RETA FINAL - RESMULTI CE E ENARE 2024 - Conhecimentos Específicos de Nutrição
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=422&categoria=1&nomecurso=CONCURSO PÚBLICO - PREFEITURA MUNICIPAL DE SÃO CAETANO DO SUL/SP - Conhecimentos Gerais - NÍVEL MÉDIO, TÉCNICO E SUPERIOR - Banca Idecan
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=419&categoria=1&nomecurso=Concurso Público de Maracanaú - Fiscal Sanitário
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=416&categoria=1&nomecurso=Revisão Geral - Concurso Público Umirim/CE - Enfermeiro PSF
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=415&categoria=1&nomecurso=Revisão Geral - Concurso Público Umirim/CE - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=414&categoria=1&nomecurso=Aulão de Véspera Presencial - Concurso Público de Maracanaú - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=413&categoria=1&nomecurso=Aulão de Véspera Presencial - Concurso Público de Maracanaú - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=412&categoria=1&nomecurso=Aulão de Véspera Presencial - Concurso Público de Maracanaú - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=411&categoria=1&nomecurso=SIMULA RESMULTI 2024 - ODONTOLOGIA (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=410&categoria=1&nomecurso=SIMULA RESMULTI 2024 - ODONTOLOGIA (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=409&categoria=1&nomecurso=SIMULA RESMULTI 2024 - FARMÁCIA (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=408&categoria=1&nomecurso=SIMULA RESMULTI 2024 - SERVIÇO SOCIAL (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=407&categoria=1&nomecurso=SIMULA RESMULTI 2024 - ENFERMAGEM (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=406&categoria=1&nomecurso=SIMULA RESMULTI 2024 - FISIOTERAPIA (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=405&categoria=1&nomecurso=SIMULA RESMULTI 2024 - NUTRIÇÃO (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=404&categoria=1&nomecurso=SIMULA RESMULTI 2024 - PSICÓLOGO (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=403&categoria=1&nomecurso=SIMULA RESMULTI 2024 - FARMÁCIA (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=402&categoria=1&nomecurso=SIMULA RESMULTI 2024 - SERVIÇO SOCIAL (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=401&categoria=1&nomecurso=SIMULA RESMULTI 2024 - ENFERMAGEM (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=400&categoria=1&nomecurso=SIMULA RESMULTI 2024  - FISIOTERAPIA (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=399&categoria=1&nomecurso=SIMULA RESMULTI 2024  - NUTRIÇÃO (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=398&categoria=1&nomecurso=SIMULA RESMULTI 2024 - PSICÓLOGO (ON-LINE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=397&categoria=1&nomecurso=Banca CCV/UFC/Cetrede/Funcepe - Psicologia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=396&categoria=1&nomecurso=Banca CCV/UFC/Cetrede/Funcepe - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=395&categoria=1&nomecurso=Programa Nacional de Imunização e Estratégia de Saúde Digital
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=394&categoria=1&nomecurso=Presencial - Resmulti Políticas Públicas de Saúde 2024
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=393&categoria=1&nomecurso=Concurso Prefeitura de Caucaia - PRESENCIAL - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=392&categoria=1&nomecurso=Banca Cetrede/Funcepe ON-LINE - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=391&categoria=1&nomecurso=Aulão de Véspera Presencial - Processo Seletivo de Maracanaú - Agente Comunitário de Saúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=390&categoria=1&nomecurso=Aulão de Véspera Presencial - Processo Seletivo de Maracanaú - AGENTE DE COMBATES ÀS ENDEMIAS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=389&categoria=1&nomecurso=Prefeitura de Maracanaú - Concurso Público - Conhecimentos Gerais - Nível Superior
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=388&categoria=1&nomecurso=Compreensão e Interpretação de Textos Para Residências
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=387&categoria=1&nomecurso=Presencial - Resmulti Nutrição 2024
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=386&categoria=1&nomecurso=Presencial - Resmulti Fisioterapia 2024
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=385&categoria=1&nomecurso=Presencial - Resmulti Serviço Social 2024
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=384&categoria=1&nomecurso=Presencial - Resmulti Enfermagem 2024
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=383&categoria=1&nomecurso=Presencial - Resmulti Psicologia 2024
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=382&categoria=1&nomecurso=APC - Legislação Aplicada: SUS e EBSERH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=380&categoria=1&nomecurso=Informática para EBSERH - Pré Edital
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=379&categoria=1&nomecurso=Língua Portuguesa para EBSERH - 2024
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=378&categoria=1&nomecurso=Legislação Aplicada: SUS, e EBSERH e Legislação Específica - 2026
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=377&categoria=1&nomecurso=Raciocínio Lógico e Matemática para EBSERH - 2025 (Prof Pedro Evaristo)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=376&categoria=1&nomecurso=Intensivo - PREFEITURA e CÂMARA MUNICIPAL DE UMIRIM - CE - Legislação do SUS  - Banca Idib
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=375&categoria=1&nomecurso=Aulão de Véspera Pacajus - Técnico em Enfermagem - Presencial
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=373&categoria=1&nomecurso=Processo Seletivo Público - Banca Idecan - Agente de Combate às Endemias 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=372&categoria=1&nomecurso=Processo Seletivo Público - Banca Idecan - Agente Comunitário de Saúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=371&categoria=1&nomecurso=Processo Seletivo - Rede Sarah - Técnico em Farmácia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=370&categoria=1&nomecurso=Processo Seletivo Público - Banca Idecan - Conhecimentos Gerais - Nível Médio
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=369&categoria=1&nomecurso=Concurso Público para Prefeitura de Maracanaú – Conhecimentos Específicos Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=368&categoria=1&nomecurso=Concurso Público para Prefeitura de Maracanaú – Conhecimentos Específicos Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=367&categoria=1&nomecurso=SEFIN -CONCURSO PÚBLICO - ANALISTA FAZENDÁRIO MUNICIPAL – ÁREA DO CONHECIMENTO: PSICOLOGIA 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=366&categoria=1&nomecurso=Aulão de Véspera Pacajus - Conhecimento Gerais - Presencial
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=365&categoria=1&nomecurso=Aulão de Véspera Pacajus - Fisioterapeuta - Presencial
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=364&categoria=1&nomecurso=Aulão de Véspera Pacajus - Serviço Social - Presencial
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=363&categoria=1&nomecurso=Aulão de Véspera Pacajus - Farmacêutico - Presencial
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=362&categoria=1&nomecurso=Aulão de Véspera Pacajus - Enfermeiro - Presencial
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=361&categoria=1&nomecurso=Odontologia Resmulti 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=360&categoria=1&nomecurso=Concurso Público - Prefeitura Municipal de Ocara - Enfermeiro PSF
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=359&categoria=1&nomecurso=Mentoria TJ RN - Analista Judiciário – Apoio Especializado – Serviço Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=358&categoria=1&nomecurso=Minicurso Pacajus Conhecimentos Gerais - Legislação do SUS e Língua Portuguesa
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=356&categoria=1&nomecurso=Minicurso Pacajus Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=355&categoria=1&nomecurso=Minicurso Pacajus Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=354&categoria=1&nomecurso=Minicurso Pacajus Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=353&categoria=1&nomecurso=Minicurso Pacajus Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=352&categoria=1&nomecurso=Minicurso Pacajus Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=351&categoria=1&nomecurso=Minicurso Pacajus Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=350&categoria=1&nomecurso=Banca IBFC - Conhecimentos Específicos Técnico de Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=349&categoria=1&nomecurso=Banca IBFC - Conhecimentos Específicos Farmacêuticos
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=348&categoria=1&nomecurso=Banca IBFC - Conhecimentos Específicos Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=347&categoria=1&nomecurso=Banca IBFC - Conhecimentos Específicos Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=346&categoria=1&nomecurso=Banca IBFC - Conhecimentos Específicos Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=345&categoria=1&nomecurso=Banca IBFC - Conhecimentos Específicos Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=344&categoria=1&nomecurso=Banca IBFC - Conhecimentos Específicos Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=343&categoria=1&nomecurso=Banca IBFC - Conhecimentos Gerais - Língua Portuguesa
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=342&categoria=1&nomecurso=Banca IBFC - Conhecimentos Gerais - Legislação do SUS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=341&categoria=1&nomecurso=Banca Consulpam - Agente de Combate Às Endemias
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=339&categoria=1&nomecurso=Presencial - Pacajus Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=338&categoria=1&nomecurso=Presencial - Pacajus Farmacêutico 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=337&categoria=1&nomecurso=Presencial - Pacajus Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=336&categoria=1&nomecurso=Presencial - Pacajus Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=335&categoria=1&nomecurso=Presencial - Pacajus Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=334&categoria=1&nomecurso=Presencial - Pacajus Fisioterapia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=333&categoria=1&nomecurso=Presencial - Pacajus Nutrição
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=331&categoria=1&nomecurso=Vou ser Residente 2024
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=330&categoria=1&nomecurso=Serviço Social Resmulti
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=329&categoria=1&nomecurso=Psicologia Resmulti 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=328&categoria=1&nomecurso=Enfermagem Resmulti
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=327&categoria=1&nomecurso=Fisioterapia Resmulti
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=326&categoria=1&nomecurso=Nutrição Resmulti
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=325&categoria=1&nomecurso=APC TURMA 00/01 - Políticas de Saúde Pública/Epidemiologia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=324&categoria=1&nomecurso=Prefeitura Municipal de Fortim - Ce - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=313&categoria=1&nomecurso=Revisão Processo Seletivo da Prefeitura de Caucaia - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=312&categoria=1&nomecurso=Revisão Processo Seletivo da Prefeitura de Caucaia - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=311&categoria=1&nomecurso=Revisão Processo Seletivo da Prefeitura de Caucaia - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=310&categoria=1&nomecurso=APC TURMA 02 - Políticas de Saúde Pública/Epidemiologia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=309&categoria=1&nomecurso=APC TURMA 02 - Conhecimentos Gerais 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=308&categoria=1&nomecurso=Conhecimento Específico APC Farmácia T02
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=307&categoria=1&nomecurso=Conhecimento Específico APC Psicologia T02
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=306&categoria=1&nomecurso=Conhecimento Específico APC Nutrição T02
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=305&categoria=1&nomecurso=Conhecimento Específico APC Fisioterapia T02
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=304&categoria=1&nomecurso=Conhecimento Específico APC Serviço Social T02
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=303&categoria=1&nomecurso=Conhecimento Específico APC Enfermeiro T02
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=302&categoria=1&nomecurso=Técnico de Enfermagem - SAMU
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=300&categoria=1&nomecurso=Prefeitura Municipal de Fortaleza - técnico de enfermagem 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=298&categoria=1&nomecurso=Banca Consulpam - Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=295&categoria=1&nomecurso=Prefeitura Municipal de Mulungu - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=293&categoria=1&nomecurso=Prefeitura Municipal de Mulungu - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=292&categoria=1&nomecurso=Prefeitura Municipal de Mulungu - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=291&categoria=1&nomecurso=Prefeitura Municipal de Mulungu - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=290&categoria=1&nomecurso=600 Questões - Banca AOCP
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=288&categoria=1&nomecurso=Obstetrícia - Residência UECE 2023
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=287&categoria=1&nomecurso=Processo Seletivo - Rede Sarah - Conhecimentos Gerais (Enfermeiro)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=286&categoria=1&nomecurso=Processo Seletivo - Rede Sarah - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=285&categoria=1&nomecurso=Banca Consulpam - Agente Comunitário de Saúde (ACS) 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=284&categoria=1&nomecurso=Aulão de Véspera - Rede Sarah Farmacêutico – Farmácia Hospitalar
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=283&categoria=1&nomecurso=Aulão de Véspera - Rede Sarah Fisioterapeutas
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=282&categoria=1&nomecurso=Aulão de Véspera - Rede Sarah - Conhecimentos Gerais (Português e Orientações para Prova Discursiva) Fisioterapeutas e Farmacêuticos
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=281&categoria=1&nomecurso=AULÃO DE VÉSPERA - POLÍTICAS PÚBLICAS DE SAÚDE - RESMULTI CE 2023  - ON-LINE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=280&categoria=1&nomecurso=TNO / TNE /TNP - Presencial
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=279&categoria=1&nomecurso=Conhecimentos Específicos Assistente Social ISGH - 2023
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=278&categoria=1&nomecurso=Conhecimentos Específicos Enfermeiro ISGH - 2023
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=277&categoria=1&nomecurso=Conhecimentos Específicos Farmacêutico ISGH - 2023
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=276&categoria=1&nomecurso=Conhecimentos Específicos Fisioterapeuta ISGH - 2023
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=275&categoria=1&nomecurso=REFORMA PSIQUIÁTRICA, NOVAS ABORDAGENS EM SAÚDE MENTAL E A CLÍNICA DA ATENÇÃO PSICOSSOCIAL - PRESENCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=274&categoria=1&nomecurso=Processo Seletivo - Rede Sarah - Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=273&categoria=1&nomecurso=Processo Seletivo - Rede Sarah - Farmacêutico - Farmácia Hospitalar
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=271&categoria=1&nomecurso=AULÃO DE VÉSPERA - RESMULTI CE 2023 - PRESENCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=270&categoria=1&nomecurso=AULÃO DE VÉSPERA - RESMULTI CE - NUTRIÇÃO (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=269&categoria=1&nomecurso=AULÃO DE VÉSPERA - RESMULTI CE - PSICÓLOGO (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=268&categoria=1&nomecurso=AULÃO DE VÉSPERA - RESMULTI CE - FARMÁCIA (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=267&categoria=1&nomecurso=AULÃO DE VÉSPERA - RESMULTI CE - SERVIÇO SOCIAL (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=266&categoria=1&nomecurso=AULÃO DE VÉSPERA - RESMULTI CE - FISIOTERAPIA (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=265&categoria=1&nomecurso=AULÃO DE VÉSPERA - RESMULTI CE - ENFERMAGEM (PRESENCIAL)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=264&categoria=1&nomecurso=SIMULA RESMULTI - PSICÓLOGO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=263&categoria=1&nomecurso=SIMULA RESMULTI - NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=262&categoria=1&nomecurso=SIMULA RESMULTI - FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=261&categoria=1&nomecurso=SIMULA RESMULTI - ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=260&categoria=1&nomecurso=SIMULA RESMULTI - SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=259&categoria=1&nomecurso=SIMULA RESMULTI - FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=257&categoria=1&nomecurso=Política Nacional de Imunização - PNI
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=254&categoria=1&nomecurso=Aulão de Véspera - Rede Sarah - Conhecimentos Gerais (Português e Orientações para Prova Discursiva)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=253&categoria=1&nomecurso=Aulão de Véspera - Rede Sarah Psicólogo Hospitalar
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=252&categoria=1&nomecurso=Aulão de Véspera - Rede Sarah Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=251&categoria=1&nomecurso=Presencial - Aulão de Véspera - Prefeitura Municipal de Ocara - Conhecimentos Básicos
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=250&categoria=1&nomecurso=Presencial - Processo Seletivo Rede Sarah Psicólogo Hospitalar 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=249&categoria=1&nomecurso=Presencial - Processo Seletivo Rede Sarah Nutricionista 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=248&categoria=1&nomecurso=Presencial - Resmulti Políticas Públicas de Saúde 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=247&categoria=1&nomecurso=Presencial - Resmulti Nutrição 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=246&categoria=1&nomecurso=Presencial - Resmulti Enfermagem 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=245&categoria=1&nomecurso=Presencial - Resmulti Fisioterapia 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=244&categoria=1&nomecurso=Presencial - Resmulti Serviço Social 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=243&categoria=1&nomecurso=Presencial - Resmulti Psicólogo 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=242&categoria=1&nomecurso=Processo Seletivo - Rede Sarah - Língua Portuguesa
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=241&categoria=1&nomecurso=Processo Seletivo - Rede Sarah - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=240&categoria=1&nomecurso=Processo Seletivo - Rede Sarah - Psicólogo Hospitalar
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=239&categoria=1&nomecurso=Prefeitura de Alto Santo - Banca Consulpam - Enfermeiro*
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=238&categoria=1&nomecurso=Banca Consulpam - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=237&categoria=1&nomecurso=Banca Consulpam - Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=236&categoria=1&nomecurso=Banca Consulpam - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=235&categoria=1&nomecurso=Banca Consulpam - Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=234&categoria=1&nomecurso=Banca Consulpam - Técnico em Enfermagem
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=233&categoria=1&nomecurso=Banca Consulpam - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=232&categoria=1&nomecurso=Banca Consulpam - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=229&categoria=1&nomecurso=Concurso Público - Secretaria Municipal de Saúde de Cuiabá-MT (Conhecimentos Gerais)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=228&categoria=1&nomecurso=Processo Seletivo - Prefeitura Municipal de Quixadá - Ce -  Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=226&categoria=1&nomecurso=Processo Seletivo - Prefeitura Municipal de Quixadá - Ce - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=224&categoria=1&nomecurso=Oncologia Para Residências
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=223&categoria=1&nomecurso=Prefeitura de Alto Santo - Banca Consulpam - Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=222&categoria=1&nomecurso=Prefeitura de Alto Santo - Banca Consulpam - Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=221&categoria=1&nomecurso=Prefeitura de Alto Santo - Banca Consulpam - Enfermeiro Plantonista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=220&categoria=1&nomecurso=Prefeitura de Alto Santo - Banca Consulpam - Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=219&categoria=1&nomecurso=Prefeitura de Alto Santo - Banca Consulpam - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=218&categoria=1&nomecurso=Prefeitura de Alto Santo - Banca Consulpam - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=216&categoria=1&nomecurso=Intensivo - Prefeitura Municipal de Fortaleza - Professor de Educação Física
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=215&categoria=1&nomecurso=INTENSIVO - PREFEITURA MUNICIPAL DE OCARA - CONHECIMENTOS BÁSICOS ( NÍVEL MÉDIO) - BANCA IDIB	
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=214&categoria=1&nomecurso=INTENSIVO - Língua Portuguesa- BANCA IDIB
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=213&categoria=1&nomecurso=INTENSIVO - TÉCNICO DE ENFERMAGEM - BANCA IDIB
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=212&categoria=1&nomecurso=INTENSIVO - ENFERMEIRO - BANCA IDIB
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=211&categoria=1&nomecurso=INTENSIVO - PREFEITURA MUNICIPAL DE OCARA - PSICÓLOGO - BANCA IDIB
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=210&categoria=1&nomecurso=INTENSIVO - PREFEITURA MUNICIPAL DE OCARA - FISIOTERAPEUTA - BANCA IDIB
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=209&categoria=1&nomecurso=Prefeitura de Irauçuba - Assistente Social - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=208&categoria=1&nomecurso=Prefeitura de Irauçuba - Farmacêutico Bioquímico - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=207&categoria=1&nomecurso=Prefeitura de Irauçuba - Nutricionista - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=206&categoria=1&nomecurso=Prefeitura de Irauçuba - Enfermeiro - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=205&categoria=1&nomecurso=Prefeitura de Irauçuba - Fisioterapeuta - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=204&categoria=1&nomecurso=Prefeitura de Irauçuba - Conhecimentos Gerais - Banca Consulpam
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=203&categoria=1&nomecurso=Conhecimentos Básicos - Analista do Seguro Social INSS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=202&categoria=1&nomecurso=Técnico do Seguro Social INSS 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=201&categoria=1&nomecurso=Aulão da Aprovação ISGH Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=200&categoria=1&nomecurso=Aulão da Aprovação ISGH Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=199&categoria=1&nomecurso=Aulão da Aprovação ISGH Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=198&categoria=1&nomecurso=Aulão da Aprovação ISGH Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=197&categoria=1&nomecurso=Aulão da Aprovação ISGH Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=196&categoria=1&nomecurso=Aulão da Aprovação ISGH Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=195&categoria=1&nomecurso=Aulão da Aprovação ISGH Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=194&categoria=1&nomecurso=Atuação da enfermagem no Suporte Básico e Avançado de Vida
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=193&categoria=1&nomecurso=Legislação Farmacêutica
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=192&categoria=1&nomecurso=INSS - SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=191&categoria=1&nomecurso=Perito Médico-Legista Polícia Cientifica-AL 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=190&categoria=1&nomecurso=Conhecimentos Específicos SESO IIES (Banca Dédalus)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=189&categoria=1&nomecurso=Conhecimentos Específicos ENFERMEIRO IIES (Banca Dédalus)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=188&categoria=1&nomecurso=Conhecimentos Gerais IIES (Banca dédalus)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=187&categoria=1&nomecurso=ALTA PERFORMANCE NUTRIÇÃO + C. GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=186&categoria=1&nomecurso=Dietoterapia no TGI
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=185&categoria=1&nomecurso=Serviço social e emissão de relatórios, laudos, perícias e pareceres
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=184&categoria=1&nomecurso=Pesquisa Científica em Saúde do Zero
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=183&categoria=1&nomecurso=Alta Performance Enfermagem + C. Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=182&categoria=1&nomecurso=Conhecimentos Específicos Farmácia ISGH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=181&categoria=1&nomecurso=Conhecimentos Específicos Psicologia ISGH 2023
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=180&categoria=1&nomecurso=Conhecimentos Específicos Nutrição ISGH 2023
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=179&categoria=1&nomecurso=Conhecimentos Específicos Fisioterapia ISGH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=177&categoria=1&nomecurso=Conhecimentos Gerais ISGH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=176&categoria=1&nomecurso=Conhecimentos Gerais CRO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=175&categoria=1&nomecurso=teste para lives fechadas
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=174&categoria=1&nomecurso=Psicologia (Funsaúde em Casa)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=172&categoria=1&nomecurso=Fisiopatologia do Trato Gastrointestinal - Capacitação
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=171&categoria=1&nomecurso=Aulão de Véspera Seleção Pública SDHDS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=166&categoria=1&nomecurso=Aulão PM Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=165&categoria=1&nomecurso=Aulão PM PSICO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=164&categoria=1&nomecurso=Aulão PM SESO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=161&categoria=1&nomecurso=Intensivão SDHDS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=160&categoria=1&nomecurso=Simulado PMCE Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=159&categoria=1&nomecurso=Simulado PMCE Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=157&categoria=1&nomecurso=Língua Portuguesa Rede SARAH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=156&categoria=1&nomecurso=Técnico Enfermagem Rede SARAH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=155&categoria=1&nomecurso=Conhecimentos Gerais HRVJ (ISGH)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=154&categoria=1&nomecurso=Conhecimentos Gerais Banca FGV (Concurso Semsa/Manaus)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=153&categoria=1&nomecurso=Enfermeiro UTI NEONATAL Pref. Fortaleza
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=152&categoria=1&nomecurso=Raciocínio Lógico e Matemática para Concursos
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=151&categoria=1&nomecurso=Psicólogo - PM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=150&categoria=1&nomecurso=SESO-PM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=149&categoria=1&nomecurso=Conhecimentos Gerais PM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=148&categoria=1&nomecurso=FISIOTERAPIA RESMULTI COMPLETO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=147&categoria=1&nomecurso=Conhecimentos gerais Residência Multiprofissional
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=146&categoria=1&nomecurso=Serviço Social Resmulti 2021
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=145&categoria=1&nomecurso=Psicologia Resmulti 2020
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=144&categoria=1&nomecurso=Prefeitura de Quixeramobim
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=143&categoria=1&nomecurso=CONCURSO SEAS-CE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=142&categoria=1&nomecurso=Psicólogo Pref. de Iguatu
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=141&categoria=1&nomecurso=Cirurgião-dentista Pref. Iguatu
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=140&categoria=1&nomecurso=Enfermeiro Prefeitura de Iguatu
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=139&categoria=1&nomecurso=Conhecimentos Gerais Pref. Iguatu
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=138&categoria=1&nomecurso=Conhecimentos Gerais Campina Grande
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=137&categoria=1&nomecurso=Conhecimentos Gerais Prefeitura de Morada Nova 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=136&categoria=1&nomecurso=Assistente Social Pref. Morada Nova
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=135&categoria=1&nomecurso=Fisioterapeuta Pref. Morada Nova
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=134&categoria=1&nomecurso=Nutricionista Pref. Morada Nova
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=132&categoria=1&nomecurso=Português para Concursos 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=131&categoria=1&nomecurso=Completo Extensivo Assistente Social Funsaúde 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=130&categoria=1&nomecurso=Concurso IFCE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=129&categoria=1&nomecurso=Prefeitura de Cascavel Nutrição Completo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=128&categoria=1&nomecurso=Conhecimentos Comuns Pref. Paulínia
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=123&categoria=1&nomecurso=Minicurso Políticas Públicas de Saúde Resmulti
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=122&categoria=1&nomecurso=Minicurso Farmácia Resmulti
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=121&categoria=1&nomecurso=Minicurso Serviço Social Resmulti
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=120&categoria=1&nomecurso=Minicurso Fisioterapia Resmulti 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=119&categoria=1&nomecurso=Minicurso Psicologia Resmulti 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=118&categoria=1&nomecurso=Minicurso Nutrição Resmulti 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=117&categoria=1&nomecurso=Minicurso Enfermagem Resmulti
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=116&categoria=1&nomecurso=Aulão da Aprovação Funsaúde (C.Gerais)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=115&categoria=1&nomecurso=SIMULA FUNSAÚDE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=114&categoria=1&nomecurso=Aulão da Aprovação Funsaúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=113&categoria=1&nomecurso=Enfermeiro Terapia Intensiva Neonatal Funsaúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=112&categoria=1&nomecurso=Enfermeiro Terapia Intensiva Funsaúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=111&categoria=1&nomecurso=Enfermeiro Obstetra Funsaúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=110&categoria=1&nomecurso=Revisão PEFOCE Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=109&categoria=1&nomecurso=Revisão PEFOCE Médico Legista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=108&categoria=1&nomecurso=Revisão PEFOCE Perito Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=107&categoria=1&nomecurso=ASSISTENTE ADM FUNSAÚDE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=103&categoria=1&nomecurso=FUNSAÚDE EM CASA CONHECIMENTOS GERAIS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=102&categoria=1&nomecurso=FUNSAÚDE EM CASA PSICOLOGIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=101&categoria=1&nomecurso=FUNSAÚDE EM CASA ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=100&categoria=1&nomecurso=FUNSAÚDE EM CASA SERVIÇO SOCIAL
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=99&categoria=1&nomecurso=FUNSAÚDE EM CASA FARMÁCIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=98&categoria=1&nomecurso=FUNSAÚDE EM CASA NUTRIÇÃO
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=97&categoria=1&nomecurso=FUNSAÚDE EM CASA TÉC. EM ENFERMAGEM
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=96&categoria=1&nomecurso=FUNSAÚDE EM CASA FISIOTERAPIA
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=95&categoria=1&nomecurso=TÉCNICO EM RADIOLOGIA FUNSAÚDE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=94&categoria=1&nomecurso=Enfermeiro Prefeitura de Fortaleza
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=93&categoria=1&nomecurso=Enfermeiro SAMU
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=92&categoria=1&nomecurso=Psicologia Resmulti Completo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=91&categoria=1&nomecurso=Enfermeiro Fiscal COREN
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=90&categoria=1&nomecurso=Perito Legista (Farmacêutico)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=89&categoria=1&nomecurso=Médico Legista Pefoce
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=88&categoria=1&nomecurso=Auxiliar de Perícia PEFOCE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=87&categoria=1&nomecurso=CONHEC. COMUNS ITEP-RN (AGENTES)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=86&categoria=1&nomecurso=CIRURGIÃO-DENTISTA FUNSAÚDE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=85&categoria=1&nomecurso=CONHEC. COMUNS ITEP-RN (PERITO E ASSISTENTE)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=84&categoria=1&nomecurso=Farmácia Resmulti 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=82&categoria=1&nomecurso=Módulos Gerais APC Saúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=81&categoria=1&nomecurso=APC Saúde Farmacêuticos
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=80&categoria=1&nomecurso=APC Saúde Psicólogos
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=79&categoria=1&nomecurso=APC Saúde Nutricionistas 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=78&categoria=1&nomecurso=APC Saúde Fisioterapeutas
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=77&categoria=1&nomecurso=APC Saúde Assistentes Sociais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=76&categoria=1&nomecurso=APC Saúde Enfermeiros
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=75&categoria=1&nomecurso=FARMACÊUTICO BANCA FGV
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=74&categoria=1&nomecurso=Preparatório Concurso Cascavel - Farmacêutico
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=73&categoria=1&nomecurso=Conhecimentos Gerais (Cargos da Saúde) Prefeitura de Cascavel
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=72&categoria=1&nomecurso=Preparatório Concurso Cascavel - Assistente Social
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=71&categoria=1&nomecurso=Preparatório Concurso Cascavel - Nutricionista
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=70&categoria=1&nomecurso=Preparatório Concurso Cascavel - Fisioterapeuta
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=69&categoria=1&nomecurso=Preparatório Concurso Cascavel - Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=68&categoria=1&nomecurso=CONHECIMENTOS GERAIS PEFOCE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=67&categoria=1&nomecurso=Aulão de Véspera - HLDV (ISGH) - Conhec. Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=66&categoria=1&nomecurso=Aulões e Lives Gratuitos
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=65&categoria=1&nomecurso=Conhecimentos Específicos FISIOTERAPIA IIES (Dédalus)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=64&categoria=1&nomecurso=Conhecimentos Específicos Serviço Social ISGH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=63&categoria=1&nomecurso=Conhecimentos Específicos Nutrição IIES(Dédalus)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=62&categoria=1&nomecurso=Conhecimentos Específicos Enfermeiro ISGH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=61&categoria=1&nomecurso=Preparatório para Residência em Nutrição 2021
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=60&categoria=1&nomecurso=Aulão de Véspera Residência 2021 - Políticas Públicas de Saúde
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=59&categoria=1&nomecurso=Aulão Reta Fnal Residente2020 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=58&categoria=1&nomecurso=Enfermagem Resmulti 2021 Completo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=57&categoria=1&nomecurso=teste transmissão ao vivo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=56&categoria=1&nomecurso=Aulão de Véspera Português+SUS
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=55&categoria=1&nomecurso=Aulão de Véspera (IJF Enfermeiro)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=54&categoria=1&nomecurso=Maratona IJF RetaFinal Psicólogo
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=53&categoria=1&nomecurso=Maratona IJF RetaFinal Enfemeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=52&categoria=1&nomecurso=Aulão de Véspera (IJF Psicólogo)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=51&categoria=1&nomecurso=INTENSIVÃO ON-LINE ISGH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=50&categoria=1&nomecurso=CONHECIMENTOS COMUNS BANCA FGV
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=49&categoria=1&nomecurso=SUS+LEGISLAÇÃO FUNSAÚDE FUNSAÚDE 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=48&categoria=1&nomecurso=TÉCNICO ENFERMAGEM FUNSAÚDE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=46&categoria=1&nomecurso=ASSISTENTE SOCIAL BANCA FGV
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=45&categoria=1&nomecurso=FISIOTERAPEUTA BANCA FGV
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=44&categoria=1&nomecurso=NUTRICIONISTA FGV
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=43&categoria=1&nomecurso=PSICÓLOGO FUNSAÚDE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=42&categoria=1&nomecurso=ENFERMEIRO BANCA FGV
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=40&categoria=1&nomecurso=Enfermagem Resmulti 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=39&categoria=1&nomecurso=Psicologia Resmulti 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=38&categoria=1&nomecurso=Fisioterapia Resmulti
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=37&categoria=1&nomecurso=Nutrição Resmulti 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=36&categoria=1&nomecurso=Conhecimentos Gerais IJF (SUS+Português)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=35&categoria=1&nomecurso=Língua Portuguesa Concurso IJF
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=34&categoria=1&nomecurso=Preparatório IJF Psicólogo (ESPECÍFICA+PORTUGUÊS)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=33&categoria=1&nomecurso=Preparatório IJF Enfermeiro (ESPECÍFICA+PORTUGUÊS)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=32&categoria=1&nomecurso=Aulão de Véspera CONCURSO SAO LUIS DO CURU
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=31&categoria=1&nomecurso=Preparatório Concurso IJF Cargo  Psicólogo 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=30&categoria=1&nomecurso=Obstetrícia - Residência UECE 2026
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=29&categoria=1&nomecurso=Preparatório Concurso Prefeitura de São Luís do Curu (CONHECIMENTOS GERAIS)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=28&categoria=1&nomecurso=Raciocínio Lógico e Matemática para EBSERH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=27&categoria=1&nomecurso=Legislação Aplicada: SUS e EBSERH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=26&categoria=1&nomecurso=Língua Portuguesa para EBSERH
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=25&categoria=1&nomecurso=300 Questões CETREDE
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=24&categoria=1&nomecurso=Preparatório Concurso Prefeitura de São Gonçalo (CONHECIMENTOS GERAIS)
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=23&categoria=1&nomecurso=Preparatório Concurso para Empresa Brasileira de Serviços Hospitalares - EBSERH Conhecimentos Gerais
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=22&categoria=1&nomecurso=Serviço Social para RESMULTI 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=21&categoria=1&nomecurso=Preparatório Concurso IJF Cargo Enfermeiro
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): materiais.asp?id=20&categoria=1&nomecurso=Políticas Públicas de Saúde - Resmulti 
+--------------------------------------------------
+Texto Visível: ''
+Destino (URL): alunos.asp
+--------------------------------------------------

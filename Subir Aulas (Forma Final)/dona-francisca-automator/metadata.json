@@ -1,0 +1,6 @@
+{
+  "name": "Dona Francisca Automator",
+  "description": "Painel de controle e gerador de scripts Python para automação de migração de módulos mapeados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

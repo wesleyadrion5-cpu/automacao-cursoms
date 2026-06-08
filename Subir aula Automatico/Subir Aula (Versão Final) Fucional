@@ -1,0 +1,460 @@
+import tkinter as tk
+from tkinter import messagebox
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from datetime import datetime
+import time
+import keyboard 
+import winsound
+import threading 
+import json
+import os
+
+# =============================================================================
+# CORES E ESTILO
+# =============================================================================
+CORES = {
+    "bg": "#FFFFFF", "topo": "#F8F9FA", "texto": "#2C3E50", 
+    "destaque": "#8E44AD", "matrix_bg": "#000000", "matrix_fg": "#00FF00",
+    "btn_bg": "#ECF0F1", "sucesso": "#27AE60", "erro": "#C0392B"
+}
+
+class MigradorEnterprise:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Robô V14 - Multi-Módulos 🔄")
+        self.root.geometry("450x750")
+        self.root.configure(bg=CORES["bg"])
+        self.root.attributes('-topmost', True)
+        
+        self.driver = None
+        self.status_var = tk.StringVar(value="Carregando configurações...")
+        self.fila_videos = [] 
+        self.parar_loop = False
+        
+        self.carregar_config()
+
+        self.ordem_atual = self.config.get("ultima_ordem", 1)
+        self.ordem_str = tk.StringVar(value=f"{self.ordem_atual:02d}")
+
+        self.setup_ui()
+        self.ativar_atalhos()
+        self.status_var.set("Pronto. Modo Contínuo Ativado.")
+
+    def carregar_config(self):
+        self.arquivo_config = "config.json"
+        try:
+            if not os.path.exists(self.arquivo_config):
+                dados_padrao = {
+                    "antigo_url": "https://cursoms.com.br/ead/admin/principal.asp",
+                    "antigo_user": "SEU_USUARIO",
+                    "antigo_pass": "SUA_SENHA",
+                    "novo_url": "https://novo.cursoms.com.br/login",
+                    "novo_user": "SEU_EMAIL",
+                    "novo_pass": "SUA_SENHA",
+                    "ultima_ordem": 1
+                }
+                with open(self.arquivo_config, "w", encoding="utf-8") as f:
+                    json.dump(dados_padrao, f, indent=4)
+                self.config = dados_padrao
+            else:
+                with open(self.arquivo_config, "r", encoding="utf-8") as f:
+                    self.config = json.load(f)
+        except Exception as e:
+            messagebox.showerror("Erro Config", f"Erro: {e}")
+            self.config = {}
+
+    def salvar_ordem(self):
+        try:
+            self.config["ultima_ordem"] = self.ordem_atual
+            with open(self.arquivo_config, "w", encoding="utf-8") as f:
+                json.dump(self.config, f, indent=4)
+        except: pass
+
+    def setup_ui(self):
+        top = tk.Frame(self.root, bg=CORES["topo"], pady=10, bd=1, relief="solid")
+        top.pack(fill="x")
+        tk.Label(top, text="MIGRADOR V14 (CONTÍNUO) 🔄", bg=CORES["topo"], font=("Impact", 14), fg=CORES["destaque"]).pack()
+        tk.Button(top, text="🌐 Iniciar Sistema", bg=CORES["texto"], fg="white", font=("Arial", 9, "bold"), 
+                  command=self.iniciar_browser).pack(pady=5)
+
+        cmds = tk.Frame(self.root, bg=CORES["bg"], pady=5)
+        cmds.pack(fill="x")
+        tk.Button(cmds, text="1. Login Antigo", command=self.login_antigo, width=15).pack(side="left", padx=10)
+        tk.Button(cmds, text="2. Login Novo", bg="#D5F5E3", fg="#1E8449", command=self.login_novo, width=15).pack(side="right", padx=10)
+
+        step1 = tk.LabelFrame(self.root, text="PASSO 1: Captura", bg=CORES["bg"], font=("Arial", 9, "bold"), fg="#2980B9")
+        step1.pack(fill="x", padx=10, pady=5)
+        
+        tk.Button(step1, text="🔍 LER LISTA (Raio-X Profundo)", bg="#F39C12", fg="white", font=("Arial", 10, "bold"), 
+                  command=self.iniciar_varredura_thread).pack(fill="x", padx=5, pady=5)
+        
+        self.lbl_fila = tk.Label(step1, text="Fila: 0 vídeos", bg=CORES["bg"], fg="red", font=("Arial", 10))
+        self.lbl_fila.pack()
+        
+        tk.Button(step1, text="🗑️ Pular 1º da Fila", bg="#BDC3C7", command=self.pular_primeiro).pack(fill="x", padx=20, pady=2)
+
+        step2 = tk.LabelFrame(self.root, text="PASSO 2: Execução", bg=CORES["bg"], font=("Arial", 9, "bold"), fg="red")
+        step2.pack(fill="x", padx=10, pady=5)
+
+        tk.Button(step2, text="🚀 COLAR TUDO AUTOMÁTICO", bg="red", fg="white", font=("Arial", 11, "bold"), 
+                  command=self.iniciar_colagem_total_thread).pack(fill="x", padx=5, pady=5)
+        
+        tk.Label(step2, text="F9 = Colar um só", bg=CORES["bg"], font=("Arial", 8)).pack()
+
+        cnt = tk.Frame(self.root, bg=CORES["bg"], pady=5)
+        cnt.pack()
+        tk.Button(cnt, text="🔄 Reset (F8)", bg="#3498DB", fg="white", font=("Arial", 8, "bold"), command=self.resetar_ordem).pack(side="left", padx=10)
+        
+        frame_num = tk.Frame(cnt, bg=CORES["bg"])
+        frame_num.pack(side="left", padx=5)
+        tk.Label(frame_num, text="Ordem:", bg=CORES["bg"]).pack(side="left")
+        tk.Label(frame_num, textvariable=self.ordem_str, font=("Segoe UI", 24, "bold"), bg=CORES["bg"], fg="blue").pack(side="left")
+
+        tk.Button(cnt, text="🛑 PARAR", bg="black", fg="white", command=self.parar_tudo).pack(side="right", padx=10)
+
+        self.matrix_frame = tk.Frame(self.root, bg="black", bd=2, relief="sunken")
+        self.matrix_frame.pack(fill="both", expand=True, padx=10, pady=5)
+        self.lbl_status_acao = tk.Label(self.matrix_frame, text="Aguardando...", bg="black", fg="#0F0", font=("Consolas", 10))
+        self.lbl_status_acao.pack(fill="x")
+        self.lista_hist = tk.Listbox(self.matrix_frame, bg="black", fg="#008000", height=6, bd=0, font=("Consolas", 9))
+        self.lista_hist.pack(fill="both", expand=True)
+
+        self.bar = tk.Label(self.root, textvariable=self.status_var, bg="#ECF0F1", anchor="w", padx=5)
+        self.bar.pack(side="bottom", fill="x")
+
+    def ativar_atalhos(self):
+        keyboard.add_hotkey('f9', self.colar_proximo_manual)
+        keyboard.add_hotkey('f8', self.resetar_ordem)
+
+    def iniciar_browser(self):
+        try:
+            self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+            self.driver.maximize_window()
+            self.status_var.set("Navegador aberto.")
+        except Exception as e:
+            messagebox.showerror("Erro", str(e))
+
+    def parar_tudo(self):
+        self.parar_loop = True
+        self.status_var.set("🛑 Parada solicitada...")
+
+    def pular_primeiro(self):
+        if self.fila_videos:
+            removido = self.fila_videos.pop(0)
+            self.lbl_fila.config(text=f"Fila: {len(self.fila_videos)} vídeos")
+            self.status_var.set(f"Pulado: {removido['titulo']}")
+            self.ordem_atual += 1
+            self.ordem_str.set(f"{self.ordem_atual:02d}")
+            self.salvar_ordem()
+        else:
+            self.status_var.set("Fila vazia.")
+
+    def resetar_ordem(self):
+        self.ordem_atual = 1
+        self.ordem_str.set("01")
+        self.salvar_ordem()
+        self.status_var.set("🔄 Ordem resetada para 01!")
+        try: winsound.Beep(500, 300)
+        except: pass
+
+    # --- LOGINS ---
+    def login_antigo(self):
+        if not self.driver: return
+        threading.Thread(target=self._login_antigo_thread).start()
+
+    def _login_antigo_thread(self):
+        try:
+            self.driver.execute_script("window.open('');")
+            self.driver.switch_to.window(self.driver.window_handles[-1])
+            self.driver.get(self.config["antigo_url"])
+            wait = WebDriverWait(self.driver, 10)
+            u = wait.until(EC.element_to_be_clickable((By.NAME, "logindagestao")))
+            u.click(); u.clear(); u.send_keys(self.config["antigo_user"])
+            s = self.driver.find_element(By.NAME, "senhadagestao")
+            s.click(); s.clear(); s.send_keys(self.config["antigo_pass"])
+            self.driver.find_element(By.XPATH, "//input[@value='Entrar']").click()
+            self.status_var.set("Login antigo OK")
+        except: pass
+
+    def login_novo(self):
+        if not self.driver: return
+        threading.Thread(target=self._login_novo_thread).start()
+
+    def _login_novo_thread(self):
+        try:
+            self.driver.execute_script(f"window.open('{self.config['novo_url']}');")
+            self.driver.switch_to.window(self.driver.window_handles[-1])
+            wait = WebDriverWait(self.driver, 10)
+            email = wait.until(EC.presence_of_element_located((By.NAME, "email")))
+            email.send_keys(self.config["novo_user"])
+            pwd = self.driver.find_element(By.NAME, "password")
+            pwd.send_keys(self.config["novo_pass"])
+            pwd.send_keys(Keys.ENTER)
+            self.status_var.set("Login novo OK")
+        except: pass
+
+    # =========================================================================
+    #  Navegação Segura entre Abas
+    # =========================================================================
+    def focar_site_novo(self):
+        """ Garante que o robô está olhando para a aba do site novo """
+        for aba in self.driver.window_handles:
+            self.driver.switch_to.window(aba)
+            if "novo.cursoms" in self.driver.current_url:
+                return True
+        return False
+
+    def focar_site_antigo(self):
+        """ Garante que o robô está olhando para a aba do site antigo """
+        for aba in self.driver.window_handles:
+            self.driver.switch_to.window(aba)
+            url = self.driver.current_url
+            if "cursoms.com.br" in url and "novo.cursoms" not in url:
+                return True
+        return False
+
+    # =========================================================================
+    #  1. CAPTURA (V14 - AUTO-FOCO E LIMPEZA)
+    # =========================================================================
+    def iniciar_varredura_thread(self):
+        threading.Thread(target=self.varrer_lista).start()
+
+    def varrer_lista(self):
+        if not self.driver: return
+        
+        # --- CORREÇÃO AQUI: FOCA NO SITE ANTIGO ANTES DE PROCURAR ---
+        if not self.focar_site_antigo():
+            self.status_var.set("❌ Aba do site antigo não encontrada!")
+            messagebox.showerror("Erro", "Não encontrei a aba do site antigo aberta.")
+            return
+
+        # --- CORREÇÃO AQUI: LIMPA A FILA ANTERIOR ---
+        self.fila_videos.clear()
+        self.lbl_fila.config(text="Fila: 0 vídeos")
+        # ------------------------------------------------------------
+
+        self.status_var.set("🔍 Caçando vídeos (Aguarde até 5s)...")
+        LINK_ALVO = "alterar_video.asp" 
+        
+        def buscar_links_em_frames():
+            links = self.driver.find_elements(By.XPATH, f"//a[contains(@href, '{LINK_ALVO}')]")
+            if links:
+                return [l.get_attribute("href") for l in links]
+            
+            quadros = self.driver.find_elements(By.TAG_NAME, "frame") + self.driver.find_elements(By.TAG_NAME, "iframe")
+            
+            for quadro in quadros:
+                try:
+                    self.driver.switch_to.frame(quadro)
+                    encontrados = buscar_links_em_frames() 
+                    if encontrados:
+                        return encontrados
+                    self.driver.switch_to.parent_frame() 
+                except:
+                    self.driver.switch_to.parent_frame()
+                    
+            return []
+
+        try:
+            urls = []
+            for tentativa in range(5):
+                self.driver.switch_to.default_content() 
+                urls = buscar_links_em_frames()
+                if urls:
+                    break 
+                time.sleep(1) 
+
+            if not urls:
+                self.status_var.set("❌ NADA ENCONTRADO!")
+                messagebox.showwarning("Atenção", "Nenhum vídeo encontrado na tela!\n\n1. Verifique se clicou em 'Acessar' no módulo.\n2. Verifique se a página carregou completamente.")
+                return
+
+            urls.reverse() 
+            self.status_var.set(f"Capturando {len(urls)} vídeos...")
+            
+            janela_princ = self.driver.current_window_handle
+            
+            for i, url in enumerate(urls):
+                try:
+                    self.status_var.set(f"Extraindo dados... ({i+1}/{len(urls)})")
+                    self.driver.execute_script(f"window.open('{url}');") 
+                    self.driver.switch_to.window(self.driver.window_handles[-1])
+                    
+                    wait = WebDriverWait(self.driver, 5)
+                    elem_t = wait.until(EC.presence_of_element_located((By.ID, "assunto")))
+                    
+                    tit = self.limpar_texto(elem_t.get_attribute("value"))
+                    vim = self.driver.find_element(By.ID, "vimeo").get_attribute("value")
+                    
+                    self.fila_videos.append({"titulo": tit, "vimeo": vim})
+                    self.lbl_fila.config(text=f"Fila: {len(self.fila_videos)} vídeos")
+                    
+                    self.driver.close() 
+                    self.driver.switch_to.window(janela_princ) 
+
+                except Exception as e:
+                    self.driver.close()
+                    self.driver.switch_to.window(janela_princ)
+
+            self.status_var.set("✅ Captura finalizada com sucesso!")
+            winsound.Beep(1000, 200)
+
+        except Exception as e:
+            self.status_var.set(f"Erro fatal captura: {e}")
+            try: self.driver.switch_to.window(janela_princ)
+            except: pass
+
+    def limpar_texto(self, t):
+        if not t: return ""
+        t = " ".join(t.strip().split())
+        return t.title() if t.isupper() else t
+
+    # =========================================================================
+    #  2. EXECUÇÃO 
+    # =========================================================================
+    def iniciar_colagem_total_thread(self):
+        if not self.fila_videos:
+            messagebox.showwarning("Aviso", "A fila está vazia!")
+            return
+        self.parar_loop = False
+        threading.Thread(target=self.loop_colagem).start()
+
+    def loop_colagem(self):
+        if not self.focar_site_novo():
+            self.status_var.set("❌ Site novo não encontrado!")
+            return
+
+        while self.fila_videos and not self.parar_loop:
+            dados = self.fila_videos[0] 
+            
+            sucesso = self.processar_video_completo(dados)
+            
+            if sucesso:
+                self.fila_videos.pop(0) 
+                self.lbl_fila.config(text=f"Fila: {len(self.fila_videos)} restantes")
+                self.ordem_atual += 1
+                self.ordem_str.set(f"{self.ordem_atual:02d}")
+                self.salvar_ordem()
+                time.sleep(1.0) 
+            else:
+                self.status_var.set("⚠️ Falha crítica. Tentando recuperar...")
+                self.bip_erro()
+                self.recuperar_para_lista()
+                self.status_var.set(f"⚠️ Pulando vídeo ruim: {dados['titulo']}")
+                self.fila_videos.pop(0) 
+                self.ordem_atual += 1
+                self.ordem_str.set(f"{self.ordem_atual:02d}")
+        
+        if not self.fila_videos:
+            self.status_var.set("🎉 PROCESSO CONCLUÍDO!")
+            self.bip_sucesso()
+
+    def recuperar_para_lista(self):
+        try:
+            self.driver.execute_script("window.history.back();")
+            time.sleep(2)
+        except: pass
+
+    def processar_video_completo(self, dados):
+        try:
+            wait = WebDriverWait(self.driver, 15) 
+            
+            try:
+                btn_add = self.driver.find_element(By.CLASS_NAME, "add_new_btn")
+                self.lbl_status_acao.config(text=f"Adicionando: {dados['titulo']}...")
+                self.driver.execute_script("arguments[0].click();", btn_add)
+            except: pass
+
+            self.lbl_status_acao.config(text="Preenchendo ID...")
+            
+            campo_vimeo = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@*[name()='wire:model']='lessons.vimeo_id']")))
+            campo_ordem = self.driver.find_element(By.XPATH, "//input[@*[name()='wire:model']='lessons.order']")
+            campo_nome  = self.driver.find_element(By.XPATH, "//input[@*[name()='wire:model']='lessons.name']")
+            campo_arq   = self.driver.find_element(By.XPATH, "//input[@*[name()='wire:model']='lessons.filename']")
+            campo_data  = self.driver.find_element(By.XPATH, "//input[@*[name()='wire:model']='lessons.publish_date']")
+            
+            self.preencher_input(campo_vimeo, dados['vimeo'])
+            campo_vimeo.send_keys(Keys.TAB) 
+            
+            self.lbl_status_acao.config(text="⏳ Aguardando dados do Vimeo...")
+            
+            def duracao_apareceu(driver):
+                try:
+                    elem = driver.find_element(By.XPATH, "//input[@*[name()='wire:model']='lessons.time']")
+                    val = elem.get_attribute("value")
+                    return val and val.isdigit() and int(val) > 0
+                except: return False
+
+            try:
+                WebDriverWait(self.driver, 3).until(duracao_apareceu)
+                time.sleep(0.5) 
+            except:
+                self.lbl_status_acao.config(text="⚠️ Timeout. Forçando '1'...")
+                try:
+                    campo_duracao = self.driver.find_element(By.XPATH, "//input[@*[name()='wire:model']='lessons.time']")
+                    self.preencher_input(campo_duracao, "1")
+                except: pass
+
+            self.lbl_status_acao.config(text="Sobrescrevendo nomes...")
+            self.preencher_input(campo_ordem, str(self.ordem_atual))
+            self.preencher_input(campo_nome, dados['titulo'])
+            self.preencher_input(campo_arq, dados['titulo'])
+            
+            hoje = datetime.now().strftime("%d%m%Y")
+            campo_data.send_keys(hoje) 
+            
+            self.lbl_status_acao.config(text="Salvando...")
+            btn_salvar = self.driver.find_element(By.XPATH, "//button[contains(text(), 'Salvar')]")
+            self.driver.execute_script("arguments[0].click();", btn_salvar)
+            
+            self.lbl_status_acao.config(text="Verificando...")
+            try:
+                wait.until(EC.presence_of_element_located((By.CLASS_NAME, "add_new_btn")))
+                self.lista_hist.insert(0, f"✅ #{self.ordem_atual} - {dados['titulo']}")
+                return True
+            except:
+                self.lbl_status_acao.config(text="❌ Erro ao salvar!")
+                return False
+
+        except Exception as e:
+            print(f"Erro no processo: {e}")
+            return False
+
+    def preencher_input(self, elemento, valor):
+        try:
+            elemento.click()
+            elemento.send_keys(Keys.CONTROL + "a")
+            elemento.send_keys(Keys.DELETE)
+            elemento.send_keys(valor)
+        except: pass
+
+    def colar_proximo_manual(self):
+        if self.fila_videos:
+            self.parar_loop = True 
+            dados = self.fila_videos[0]
+            if self.focar_site_novo():
+                if self.processar_video_completo(dados):
+                    self.fila_videos.pop(0)
+                    self.lbl_fila.config(text=f"Fila: {len(self.fila_videos)}")
+                    self.ordem_atual += 1
+                    self.ordem_str.set(f"{self.ordem_atual:02d}")
+                    self.salvar_ordem()
+                    self.bip_sucesso()
+
+    def bip_sucesso(self):
+        try: winsound.Beep(1200, 100)
+        except: pass
+    def bip_erro(self):
+        try: winsound.Beep(400, 400)
+        except: pass
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = MigradorEnterprise(root)
+    root.mainloop()

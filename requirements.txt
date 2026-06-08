@@ -1,0 +1,10 @@
+beautifulsoup4
+customtkinter
+Flask
+groq
+keyboard
+matplotlib
+pandas
+requests
+selenium
+webdriver-manager

@@ -1,0 +1,31 @@
+[tool.black]
+line-length = 100
+target-version = ["py313"]
+include = '\.pyi?$'
+extend-exclude = '''
+(
+  /build/
+  | /logs/
+  | /arquivos_migracao/
+  | /arquivos_migracao_1/
+  | /arquivos_migracao_2/
+  | /arquivos_migracao_3/
+  | /arquivos_migracao_4/
+)
+'''
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+extend-exclude = [
+  "build",
+  "logs",
+  "arquivos_migracao",
+  "arquivos_migracao_1",
+  "arquivos_migracao_2",
+  "arquivos_migracao_3",
+  "arquivos_migracao_4",
+]
+
+[tool.ruff.lint]
+select = ["I"]
