@@ -1,0 +1,6 @@
+# Ignorar absolutamente tudo por padrao
+*
+
+# Excecoes: permitir apenas scripts Python e o proprio .gitignore
+!*.py
+!.gitignore

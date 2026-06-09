@@ -17,13 +17,16 @@ import tkinter as tk
 import traceback
 import unicodedata
 import winsound
-from datetime import datetime
+from datetime import datetime, timezone
 from tkinter import filedialog, messagebox, ttk
-from typing import Optional
+from typing import Dict, Any, Optional
 from urllib.parse import quote, urljoin
+import urllib.parse
+import http.server
+import socketserver
+import webbrowser
 
 import customtkinter as ctk
-import supabase_client
 import keyboard
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -40,6 +43,315 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
+
+# * =============================================================================
+# * SUPABASE INTEGRATION (UNIFIED CLIENT)
+# * =============================================================================
+
+SUPABASE_URL = "https://hmyohefvgezexwixfhyb.supabase.co"
+SUPABASE_KEY = (
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhteW9oZWZ2Z2V6ZXh3aXhmaHliIi"
+    "wicm9sZSI6ImFub24iLCJpYXQiOjE3ODA5MTk4OTIsImV4cCI6MjA5NjQ5NTg5Mn0.Wx4pQZUZmDS7wPIaCt9oQz6jpE-kvTMPyokM3Ifhwe8"
+)
+
+HEADERS = {
+    "apikey": SUPABASE_KEY,
+    "Authorization": f"Bearer {SUPABASE_KEY}",
+    "Content-Type": "application/json",
+}
+
+def carregar_configs() -> Dict[str, str]:
+    """Busca todas as configurações da tabela automator_config no Supabase."""
+    url = f"{SUPABASE_URL}/rest/v1/automator_config?select=key,value"
+    try:
+        response = requests.get(url, headers=HEADERS, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            return {item["key"]: item["value"] for item in data if "key" in item}
+    except Exception as e:
+        print(f"[Supabase] Erro ao carregar configurações: {e}")
+    return {}
+
+def salvar_configs(configs: Dict[str, str]) -> bool:
+    """Salva todas as configurações locais no Supabase fazendo upsert."""
+    url = f"{SUPABASE_URL}/rest/v1/automator_config"
+    headers_upsert = HEADERS.copy()
+    headers_upsert["Prefer"] = "resolution=merge-duplicates"
+    
+    payload = []
+    now_str = datetime.now(timezone.utc).isoformat()
+    for k, v in configs.items():
+        payload.append({
+            "key": k,
+            "value": str(v),
+            "updated_at": now_str
+        })
+        
+    try:
+        response = requests.post(url, headers=headers_upsert, json=payload, timeout=10)
+        return response.status_code in (200, 201)
+    except Exception as e:
+        print(f"[Supabase] Erro ao salvar configurações: {e}")
+        return False
+
+def registrar_log(worker_id: int, modulo: str, curso: str, professor: str, status: str, detalhes: str) -> bool:
+    """Insere uma linha de log na tabela automator_logs no Supabase."""
+    url = f"{SUPABASE_URL}/rest/v1/automator_logs"
+    payload = {
+        "worker_id": worker_id,
+        "modulo": modulo,
+        "curso": curso,
+        "professor": professor,
+        "status": status,
+        "detalhes": detalhes,
+        "created_at": datetime.now(timezone.utc).isoformat()
+    }
+    try:
+        response = requests.post(url, headers=HEADERS, json=payload, timeout=10)
+        return response.status_code in (200, 201)
+    except Exception as e:
+        print(f"[Supabase] Erro ao registrar log: {e}")
+        return False
+
+def criar_job(nome_planilha: str, total_modulos: int) -> Optional[int]:
+    """Cria uma tarefa de lote na tabela automator_jobs e retorna o id gerado."""
+    url = f"{SUPABASE_URL}/rest/v1/automator_jobs"
+    headers_insert = HEADERS.copy()
+    headers_insert["Prefer"] = "return=representation"
+    
+    now_str = datetime.now(timezone.utc).isoformat()
+    payload = {
+        "nome_planilha": nome_planilha,
+        "total_modulos": total_modulos,
+        "modulos_concluidos": 0,
+        "status": "Executando",
+        "created_at": now_str,
+        "updated_at": now_str
+    }
+    try:
+        response = requests.post(url, headers=headers_insert, json=payload, timeout=10)
+        if response.status_code in (200, 201):
+            data = response.json()
+            if data and isinstance(data, list) and "id" in data[0]:
+                return int(data[0]["id"])
+    except Exception as e:
+        print(f"[Supabase] Erro ao criar job: {e}")
+    return None
+
+def atualizar_progresso_job(job_id: int, concluidos: int, status: str) -> bool:
+    """Atualiza a quantidade de módulos concluídos e status de uma tarefa no Supabase."""
+    url = f"{SUPABASE_URL}/rest/v1/automator_jobs?id=eq.{job_id}"
+    payload = {
+        "modulos_concluidos": concluidos,
+        "status": status,
+        "updated_at": datetime.now(timezone.utc).isoformat()
+    }
+    try:
+        response = requests.patch(url, headers=HEADERS, json=payload, timeout=10)
+        return response.status_code in (200, 204)
+    except Exception as e:
+        print(f"[Supabase] Erro ao atualizar job: {e}")
+        return False
+
+def cadastrar_usuario(email: str, senha: str) -> dict:
+    """Cadastra um novo usuário no Supabase Auth."""
+    url = f"{SUPABASE_URL}/auth/v1/signup"
+    payload = {"email": email, "password": senha}
+    try:
+        response = requests.post(url, headers=HEADERS, json=payload, timeout=10)
+        try:
+            dados = response.json()
+        except ValueError:
+            dados = {}
+        if response.status_code in (200, 201):
+            return {"status": "sucesso", "dados": dados}
+        else:
+            msg = dados.get("error_description", dados.get("msg", "Erro ao cadastrar usuário"))
+            if "already registered" in msg.lower():
+                msg = "Este e-mail já está cadastrado!"
+            return {"status": "erro", "mensagem": msg}
+    except Exception as e:
+        return {"status": "erro", "mensagem": str(e)}
+
+def fazer_login(email: str, senha: str) -> dict:
+    """Autentica um usuário no Supabase Auth."""
+    url = f"{SUPABASE_URL}/auth/v1/token?grant_type=password"
+    payload = {"email": email, "password": senha}
+    try:
+        response = requests.post(url, headers=HEADERS, json=payload, timeout=10)
+        try:
+            dados = response.json()
+        except ValueError:
+            dados = {}
+        if response.status_code == 200:
+            return {
+                "status": "sucesso",
+                "access_token": dados.get("access_token"),
+                "refresh_token": dados.get("refresh_token"),
+                "user": dados.get("user")
+            }
+        else:
+            msg = dados.get("error_description", dados.get("msg", "E-mail ou senha inválidos!"))
+            if "invalid login credentials" in msg.lower() or "invalid grant" in msg.lower():
+                msg = "E-mail ou senha incorretos!"
+            return {"status": "erro", "mensagem": msg}
+    except Exception as e:
+        return {"status": "erro", "mensagem": str(e)}
+
+def validar_sessao_supabase(access_token: str) -> Optional[dict]:
+    """Testa se a sessão do usuário ainda é válida enviando requisição GET para /auth/v1/user."""
+    url = f"{SUPABASE_URL}/auth/v1/user"
+    headers_user = {
+        "apikey": SUPABASE_KEY,
+        "Authorization": f"Bearer {access_token}"
+    }
+    try:
+        response = requests.get(url, headers=headers_user, timeout=10)
+        if response.status_code == 200:
+            return response.json()
+    except Exception as e:
+        print(f"[Supabase Session] Erro ao validar token: {e}")
+    return None
+
+def renovar_sessao_supabase(refresh_token: str) -> Optional[dict]:
+    """Tenta renovar a sessão utilizando o refresh token."""
+    url = f"{SUPABASE_URL}/auth/v1/token?grant_type=refresh_token"
+    payload = {"refresh_token": refresh_token}
+    try:
+        response = requests.post(url, headers=HEADERS, json=payload, timeout=10)
+        if response.status_code == 200:
+            dados = response.json()
+            return {
+                "status": "sucesso",
+                "access_token": dados.get("access_token"),
+                "refresh_token": dados.get("refresh_token"),
+                "user": dados.get("user")
+            }
+    except Exception as e:
+        print(f"[Supabase Session] Erro ao renovar token: {e}")
+    return None
+
+class OAuthCallbackHandler(http.server.SimpleHTTPRequestHandler):
+    resultado = {}
+    
+    def log_message(self, format, *args):
+        pass
+        
+    def do_GET(self):
+        parsed_url = urllib.parse.urlparse(self.path)
+        
+        if parsed_url.path == "/callback":
+            query = urllib.parse.parse_qs(parsed_url.query)
+            OAuthCallbackHandler.resultado["access_token"] = query.get("access_token", [None])[0]
+            OAuthCallbackHandler.resultado["refresh_token"] = query.get("refresh_token", [None])[0]
+            OAuthCallbackHandler.resultado["error"] = query.get("error", [None])[0]
+            
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.end_headers()
+            self.wfile.write("""
+            <html>
+            <head>
+                <title>Autenticação Concluída</title>
+                <style>
+                    body { font-family: 'Segoe UI', sans-serif; background: #0F1216; color: white; text-align: center; padding: 50px; }
+                    .card { background: #1E293B; border-radius: 12px; padding: 30px; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+                    h1 { color: #00A36C; }
+                </style>
+            </head>
+            <body>
+                <div class="card">
+                    <h1>🤖 Autenticação Concluída com Sucesso!</h1>
+                    <p>Você já pode fechar esta aba do navegador e voltar para a interface do robô.</p>
+                </div>
+            </body>
+            </html>
+            """.encode("utf-8"))
+            
+            threading.Thread(target=self.server.shutdown, daemon=True).start()
+            return
+            
+        self.send_response(200)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.end_headers()
+        self.wfile.write("""
+        <html>
+        <head>
+            <title>Conectando ao Robô...</title>
+            <script>
+                const hash = window.location.hash;
+                if (hash) {
+                    const query = hash.substring(1);
+                    window.location.href = "/callback?" + query;
+                } else {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const error = urlParams.get('error_description') || urlParams.get('error') || '';
+                    if (error) {
+                        window.location.href = "/callback?error=" + encodeURIComponent(error);
+                    } else {
+                        document.body.innerHTML = "<h1>Erro de Autenticação</h1><p>Nenhum token encontrado.</p>";
+                    }
+                }
+            </script>
+        </head>
+        <body>
+            <p style="font-family: sans-serif; text-align: center; margin-top: 50px;">Processando credenciais, por favor aguarde...</p>
+        </body>
+        </html>
+        """.encode("utf-8"))
+
+def iniciar_servidor_oauth_e_obter_token(provedor: str) -> dict:
+    """Abre o navegador para o provedor OAuth e aguarda o token no servidor local temporário."""
+    porta = 5050
+    OAuthCallbackHandler.resultado = {}
+    
+    socketserver.TCPServer.allow_reuse_address = True
+    try:
+        server = socketserver.TCPServer(("localhost", porta), OAuthCallbackHandler)
+    except Exception as e:
+        print(f"[Supabase OAuth] Erro ao iniciar servidor local na porta {porta}: {e}")
+        return {"status": "erro", "mensagem": f"Porta {porta} em uso ou erro de rede: {e}"}
+        
+    url_autorizacao = f"{SUPABASE_URL}/auth/v1/authorize?provider={provedor}&redirect_to=http://localhost:{porta}"
+    
+    def abrir_navegador():
+        time.sleep(0.5)
+        webbrowser.open(url_autorizacao)
+        
+    threading.Thread(target=abrir_navegador, daemon=True).start()
+    
+    print(f"[Supabase OAuth] Servidor temporario de login social rodando em http://localhost:{porta}")
+    server.serve_forever()
+    server.server_close()
+    
+    res = OAuthCallbackHandler.resultado
+    if res.get("access_token"):
+        url_usuario = f"{SUPABASE_URL}/auth/v1/user"
+        headers_user = {
+            "apikey": SUPABASE_KEY,
+            "Authorization": f"Bearer {res['access_token']}"
+        }
+        try:
+            r_user = requests.get(url_usuario, headers=headers_user, timeout=10)
+            if r_user.status_code == 200:
+                return {
+                    "status": "sucesso",
+                    "access_token": res["access_token"],
+                    "user": r_user.json()
+                }
+        except Exception as e:
+            print(f"[Supabase OAuth] Erro ao obter dados do usuario: {e}")
+            
+        return {
+            "status": "sucesso",
+            "access_token": res["access_token"],
+            "user": {"email": "Usuario Social"}
+        }
+    else:
+        erro_msg = res.get("error", "Autenticação cancelada ou expirada.")
+        return {"status": "erro", "mensagem": erro_msg}
+
+# * =============================================================================
 
 # Detecta se está rodando a partir de um executável compilado (.exe) pelo PyInstaller
 IS_FROZEN = getattr(sys, 'frozen', False)
@@ -328,6 +640,28 @@ except Exception:
                     )
                     return [dict(linha) for linha in cursor.fetchall()]
 
+        def fetch_status_counts(self):
+            import sqlite3
+
+            with self._lock:
+                with sqlite3.connect(self.db_path) as conn:
+                    cursor = conn.cursor()
+                    cursor.execute(
+                        "SELECT status, COUNT(*) FROM historico_modulos GROUP BY status"
+                    )
+                    return cursor.fetchall()
+
+        def fetch_daily_counts(self):
+            import sqlite3
+
+            with self._lock:
+                with sqlite3.connect(self.db_path) as conn:
+                    cursor = conn.cursor()
+                    cursor.execute(
+                        "SELECT substr(data_hora, 1, 10) as dia, COUNT(*) FROM historico_modulos GROUP BY dia ORDER BY dia DESC LIMIT 7"
+                    )
+                    return cursor.fetchall()
+
     def load_excel_records(path):
         df = pd.read_excel(path)
         df.columns = df.columns.astype(str).map(normalize_text)
@@ -585,9 +919,14 @@ class FrotaWorker(threading.Thread):
         return self._driver
 
     def _iniciar_driver_e_logins(self):
+        options = build_chrome_options_accepting_old_certificates()
+        if self.motor.config.get("headless", False):
+            options.add_argument("--headless=new")
+            options.add_argument("--disable-gpu")
+            options.add_argument("--window-size=1920,1080")
         self._driver = webdriver.Chrome(  # type: ignore[reportCallIssue]
             service=Service(ChromeDriverManager().install()),
-            options=build_chrome_options_accepting_old_certificates(),
+            options=options,
         )
         self.driver.maximize_window()
         wait = WebDriverWait(self.driver, 15)
@@ -818,11 +1157,26 @@ class FrotaWorker(threading.Thread):
     def _trocar_para_janela_segura(self, handle, contexto):
         return safe_switch_to_window(self.driver, handle, contexto)
 
-    def _abrir_url_com_certificado(self, url, contexto):
+    def _abrir_url_com_certificado_raw(self, url, contexto):
         ignorou_certificado = navigate_with_certificate_bypass(self.driver, url, contexto)
         if ignorou_certificado:
             self.log("INFO", f"Aviso de certificado ignorado no site antigo ({contexto}).")
         return ignorou_certificado
+
+    def _abrir_url_com_certificado(self, url, contexto, tentativas=3):
+        for t in range(tentativas):
+            try:
+                res = self._abrir_url_com_certificado_raw(url, contexto)
+                title_lower = (self.driver.title or "").lower()
+                if "read timed out" in title_lower or "dns_probe" in title_lower or "cannot be reached" in title_lower:
+                    raise RuntimeError("Falha de timeout ou DNS detectada no título da página.")
+                return res
+            except Exception as e:
+                self.log("ERRO", f"Falha de rede ao acessar ({contexto}). Tentativa {t+1}/{tentativas}. Esperando 5s... Erro: {e}")
+                if t < tentativas - 1:
+                    time.sleep(5)
+                else:
+                    raise
 
     def _ignorar_aviso_certificado_se_aparecer(self, contexto):
         ignorou_certificado = bypass_chrome_certificate_warning(self.driver, contexto)
@@ -1562,10 +1916,10 @@ class FrotaWorker(threading.Thread):
             url_lista_antiga = self.driver.current_url
 
             limite_rigor = float(self.motor.config.get("match_threshold", 0.60))
-            # SCRIPT VÁRIOS MAPEADOS: sempre usa Fuzzy Match por nome
-            metodo_busca = "Fuzzy Match (Buscar por Nomes)"
+            # Obtém o método de busca da configuração unificada
+            metodo_busca = self.motor.config.get("search_method", "Fuzzy Match (Buscar por Nomes)")
 
-            self.log("INFO", f"⚙️ Modo de Extração: {metodo_busca} [FORÇADO — Vários Mapeados]")
+            self.log("INFO", f"⚙️ Modo de Extração: {metodo_busca}")
 
             self.log("INFO", f"Modo de Upload: {self.motor.descricao_modo_upload()}")
 
@@ -1596,7 +1950,7 @@ class FrotaWorker(threading.Thread):
 
                 # RADAR ANTI-DUPLICATAS
                 try:
-                    self._trocar_para_janela_segura(aba_nova, "radar anti-duplicatas")
+                    self._trocar_para_janela_segura(self.aba_nova, "radar anti-duplicatas")
                     modulo_existente = self._pesquisar_modulo_novo(
                         wait,
                         nome_modulo,
@@ -1643,7 +1997,7 @@ class FrotaWorker(threading.Thread):
                     status_final = "Sucesso"
 
                     try:
-                        self._trocar_para_janela_segura(aba_antiga, "módulo antigo")
+                        self._trocar_para_janela_segura(self.aba_antiga, "módulo antigo")
                         
                         # Extrai link direto do modulo na planilha
                         link_modulo_direto = ""
@@ -1800,7 +2154,7 @@ class FrotaWorker(threading.Thread):
                             status_final = "Auditoria (Sem Upload)"
                             break
 
-                        self._trocar_para_janela_segura(aba_nova, "criação do módulo no site novo")
+                        self._trocar_para_janela_segura(self.aba_nova, "criação do módulo no site novo")
                         if modo_exige_modulo_existente and modulo_existente:
                             url_aulas = self._abrir_modulo_existente_no_novo(
                                 wait,
@@ -1816,14 +2170,14 @@ class FrotaWorker(threading.Thread):
                                     "MÃ³dulo existente encontrado, mas a lista de aulas nÃ£o foi localizada no site novo."
                                 )
                             self._trocar_para_janela_segura(
-                                aba_nova, "mÃ³dulo existente no site novo"
+                                self.aba_nova, "mÃ³dulo existente no site novo"
                             )
                             if self._eh_modulo_plano_estudos(nome_modulo):
                                 self._forcar_video_plano_estudos()
                             if self.fila_videos:
                                 self._injetar_videos(wait, nome_modulo)
                             if self.fila_arquivos:
-                                self._injetar_materiais(wait, nome_modulo, aba_antiga, aba_nova)
+                                self._injetar_materiais(wait, nome_modulo, self.aba_antiga, self.aba_nova)
                             break
 
                         if modo_exige_modulo_existente and not modulo_existente:
@@ -2759,6 +3113,7 @@ class FrotaWorker(threading.Thread):
 class AppPrincipal(ctk.CTk):
     def __init__(self):
         super().__init__()
+        self.modo_auth = "login"  # Modo inicial da autenticacao
         self.carregar_dados_login()
         ctk.set_appearance_mode(self.config.get("theme", "dark"))
         self.title("Dona Francisca — Login | Dashboard Unificado (Supabase)")
@@ -2778,14 +3133,14 @@ class AppPrincipal(ctk.CTk):
             except Exception:
                 pass
                 
-        self.geometry("450x650")
+        self.geometry("450x670")
         _bg_app = BG_WINDOW if self.config.get("theme", "dark") == "dark" else "#F1F5F9"
         self.configure(fg_color=_bg_app)
         largura_tela = self.winfo_screenwidth()
         altura_tela = self.winfo_screenheight()
         pos_x = (largura_tela // 2) - (450 // 2)
-        pos_y = (altura_tela // 2) - (650 // 2)
-        self.geometry(f"450x650+{pos_x}+{pos_y}")
+        pos_y = (altura_tela // 2) - (670 // 2)
+        self.geometry(f"450x670+{pos_x}+{pos_y}")
         self.attributes("-topmost", True)
         self.construir_tela_login()
         if getattr(self, "config_load_error", None):
@@ -2802,7 +3157,7 @@ class AppPrincipal(ctk.CTk):
         self.dados_padrao = dict(DEFAULT_CONFIG)
         self.config, self.config_load_error = load_config(self.arquivo_config, self.dados_padrao)
         try:
-            configs_nuvem = supabase_client.carregar_configs()
+            configs_nuvem = carregar_configs()
             if configs_nuvem:
                 self.config.update(configs_nuvem)
         except Exception as e:
@@ -2812,7 +3167,7 @@ class AppPrincipal(ctk.CTk):
         self.config["lembrar_user"] = usuario if lembrar else ""
         try:
             save_config(self.arquivo_config, self.config)
-            supabase_client.salvar_configs(self.config)
+            salvar_configs(self.config)
         except Exception as e:
             print(f"[Supabase] Falha ao salvar credenciais na nuvem: {e}")
 
@@ -2824,27 +3179,30 @@ class AppPrincipal(ctk.CTk):
         self.card = ctk.CTkFrame(
             self, fg_color=_bg_card, border_width=1, border_color=BORDER_COLOR, corner_radius=16
         )
-        self.card.pack(expand=True, fill="both", padx=40, pady=60)
+        self.card.pack(expand=True, fill="both", padx=40, pady=50)
         ctk.CTkLabel(self.card, text="🧠", font=("Arial", 45), text_color=VERDE_ACAO).pack(
-            pady=(30, 5)
+            pady=(25, 5)
         )
-        ctk.CTkLabel(
+        self.lbl_titulo = ctk.CTkLabel(
             self.card, text="Welcome Back", font=("Inter", 24, "bold"), text_color=_text_color
-        ).pack()
+        )
+        self.lbl_titulo.pack()
         ctk.CTkLabel(
             self.card,
             text="Secure automation login portal",
             font=("Inter", 12),
             text_color=TEXT_MUTED,
-        ).pack(pady=(0, 25))
+        ).pack(pady=(0, 20))
+        
         fu = ctk.CTkFrame(self.card, fg_color="transparent")
         fu.pack(fill="x", padx=30, pady=5)
-        ctk.CTkLabel(fu, text="Usuário", font=("Inter", 12, "bold"), text_color=TEXT_MUTED).pack(
+        self.lbl_user_rotulo = ctk.CTkLabel(fu, text="E-mail", font=("Inter", 12, "bold"), text_color=TEXT_MUTED)
+        self.lbl_user_rotulo.pack(
             anchor="w", padx=5
         )
         self.ent_user = ctk.CTkEntry(
             fu,
-            placeholder_text="Digite seu usuário",
+            placeholder_text="Digite seu e-mail",
             height=45,
             fg_color=_input_bg,
             border_color=BORDER_COLOR,
@@ -2854,6 +3212,7 @@ class AppPrincipal(ctk.CTk):
         self.ent_user.pack(fill="x", pady=(2, 0))
         if self.config.get("lembrar_user"):
             self.ent_user.insert(0, self.config.get("lembrar_user"))
+            
         fp = ctk.CTkFrame(self.card, fg_color="transparent")
         fp.pack(fill="x", padx=30, pady=10)
         ctk.CTkLabel(fp, text="Senha", font=("Inter", 12, "bold"), text_color=TEXT_MUTED).pack(
@@ -2870,11 +3229,12 @@ class AppPrincipal(ctk.CTk):
             corner_radius=8,
         )
         self.ent_pass.pack(fill="x", pady=(2, 0))
-        fo = ctk.CTkFrame(self.card, fg_color="transparent")
-        fo.pack(fill="x", padx=30, pady=5)
+        
+        self.fo_opcoes = ctk.CTkFrame(self.card, fg_color="transparent")
+        self.fo_opcoes.pack(fill="x", padx=30, pady=5)
         self.var_lembrar = ctk.BooleanVar(value=bool(self.config.get("lembrar_user")))
-        chk = ctk.CTkCheckBox(
-            fo,
+        self.chk_lembrar = ctk.CTkCheckBox(
+            self.fo_opcoes,
             text="Lembrar",
             variable=self.var_lembrar,
             font=("Inter", 12),
@@ -2886,9 +3246,10 @@ class AppPrincipal(ctk.CTk):
             checkbox_height=18,
             corner_radius=4,
         )
-        chk.pack(side="left")
-        ctk.CTkButton(
-            fo,
+        self.chk_lembrar.pack(side="left")
+        
+        self.btn_esqueceu = ctk.CTkButton(
+            self.fo_opcoes,
             text="Esqueceu a senha?",
             font=("Inter", 12, "bold"),
             text_color=VERDE_ACAO,
@@ -2896,8 +3257,10 @@ class AppPrincipal(ctk.CTk):
             hover_color=_input_bg,
             width=10,
             command=self.recuperar_senha,
-        ).pack(side="right")
-        ctk.CTkButton(
+        )
+        self.btn_esqueceu.pack(side="right")
+        
+        self.btn_submeter = ctk.CTkButton(
             self.card,
             text="ENTRAR",
             font=("Inter", 14, "bold"),
@@ -2905,15 +3268,182 @@ class AppPrincipal(ctk.CTk):
             fg_color=VERDE_ACAO,
             hover_color=VERDE_HOVER,
             corner_radius=8,
-            command=self.fazer_login,
-        ).pack(fill="x", padx=30, pady=(20, 10))
+            command=self.submeter_auth,
+        )
+        self.btn_submeter.pack(fill="x", padx=30, pady=(20, 5))
+        
+        self.btn_alternar = ctk.CTkButton(
+            self.card,
+            text="Não tem uma conta? Cadastre-se",
+            font=("Inter", 12, "bold"),
+            text_color=VERDE_ACAO,
+            fg_color="transparent",
+            hover_color=_input_bg,
+            command=self.alternar_modo_auth,
+        )
+        self.btn_alternar.pack(fill="x", padx=30, pady=(0, 5))
+
+        # Divisoria de Login Social
+        self.frame_divisoria = ctk.CTkFrame(self.card, fg_color="transparent")
+        self.frame_divisoria.pack(fill="x", padx=30, pady=(15, 10))
+        
+        l1 = ctk.CTkFrame(self.frame_divisoria, height=1, fg_color=BORDER_COLOR)
+        l1.pack(side="left", fill="x", expand=True)
+        lbl_ou = ctk.CTkLabel(self.frame_divisoria, text=" ou entre com ", font=("Inter", 11), text_color=TEXT_MUTED)
+        lbl_ou.pack(side="left")
+        l2 = ctk.CTkFrame(self.frame_divisoria, height=1, fg_color=BORDER_COLOR)
+        l2.pack(side="left", fill="x", expand=True)
+        
+        # Frame de botoes sociais
+        self.frame_sociais = ctk.CTkFrame(self.card, fg_color="transparent")
+        self.frame_sociais.pack(fill="x", padx=30, pady=(0, 10))
+        
+        btn_google = ctk.CTkButton(
+            self.frame_sociais,
+            text="Google",
+            font=("Inter", 12, "bold"),
+            height=38,
+            fg_color="#1E293B",
+            hover_color=BORDER_COLOR,
+            border_width=1,
+            border_color=BORDER_COLOR,
+            corner_radius=8,
+            command=lambda: self.fazer_login_social("google"),
+        )
+        btn_google.pack(side="left", fill="x", expand=True, padx=(0, 3))
+        
+        btn_github = ctk.CTkButton(
+            self.frame_sociais,
+            text="GitHub",
+            font=("Inter", 12, "bold"),
+            height=38,
+            fg_color="#1E293B",
+            hover_color=BORDER_COLOR,
+            border_width=1,
+            border_color=BORDER_COLOR,
+            corner_radius=8,
+            command=lambda: self.fazer_login_social("github"),
+        )
+        btn_github.pack(side="left", fill="x", expand=True, padx=(3, 3))
+        
+        btn_facebook = ctk.CTkButton(
+            self.frame_sociais,
+            text="Facebook",
+            font=("Inter", 12, "bold"),
+            height=38,
+            fg_color="#1E293B",
+            hover_color=BORDER_COLOR,
+            border_width=1,
+            border_color=BORDER_COLOR,
+            corner_radius=8,
+            command=lambda: self.fazer_login_social("facebook"),
+        )
+        btn_facebook.pack(side="left", fill="x", expand=True, padx=(3, 0))
+        
         self.lbl_status = ctk.CTkLabel(
             self.card, text="", text_color=VERMELHO_PARAR, font=("Inter", 12, "bold")
         )
         self.lbl_status.pack()
 
+        # Tenta o Login Automático se houver tokens salvos
+        if self.config.get("access_token") and self.config.get("refresh_token"):
+            self.lbl_status.configure(text="Validando sessão ativa...", text_color=VERDE_ACAO)
+            self.update()
+            
+            def thread_autologin():
+                token_valido = validar_sessao_supabase(self.config.get("access_token"))
+                if token_valido:
+                    self.after(0, self.iniciar_robo_principal)
+                else:
+                    # Tenta o refresh
+                    renovado = renovar_sessao_supabase(self.config.get("refresh_token"))
+                    if renovado and renovado.get("access_token"):
+                        self.config["access_token"] = renovado.get("access_token")
+                        self.config["refresh_token"] = renovado.get("refresh_token")
+                        try:
+                            save_config(self.arquivo_config, self.config)
+                            salvar_configs(self.config)
+                        except Exception:
+                            pass
+                        self.after(0, self.iniciar_robo_principal)
+                    else:
+                        # Falhou em ambos, limpa tokens inválidos e avisa
+                        self.config["access_token"] = ""
+                        self.config["refresh_token"] = ""
+                        try:
+                            save_config(self.arquivo_config, self.config)
+                        except Exception:
+                            pass
+                        self.after(0, lambda: self.lbl_status.configure(
+                            text="⚠️ Sessão expirada. Faça login novamente.", text_color="#F59E0B"
+                        ))
+            
+            threading.Thread(target=thread_autologin, daemon=True).start()
+
+    def alternar_modo_auth(self):
+        _input_bg = BG_INPUT if self.config.get("theme", "dark") == "dark" else "#F8FAFC"
+        if self.modo_auth == "login":
+            self.modo_auth = "cadastro"
+            self.lbl_titulo.configure(text="Criar Nova Conta")
+            self.btn_submeter.configure(text="CADASTRAR CONTA")
+            self.btn_alternar.configure(text="Já tem uma conta? Faça Login")
+            self.ent_user.configure(placeholder_text="Digite seu e-mail de cadastro")
+            self.fo_opcoes.pack_forget()  # Oculta lembrar/esqueceu senha no cadastro
+            self.frame_divisoria.pack_forget()
+            self.frame_sociais.pack_forget()
+        else:
+            self.modo_auth = "login"
+            self.lbl_titulo.configure(text="Welcome Back")
+            self.btn_submeter.configure(text="ENTRAR")
+            self.btn_alternar.configure(text="Não tem uma conta? Cadastre-se")
+            self.ent_user.configure(placeholder_text="Digite seu e-mail")
+            self.fo_opcoes.pack(fill="x", padx=30, pady=5)  # Mostra novamente
+            self.frame_divisoria.pack(fill="x", padx=30, pady=(15, 10))
+            self.frame_sociais.pack(fill="x", padx=30, pady=(0, 10))
+
     def recuperar_senha(self):
         messagebox.showinfo("Recuperação", "Contacte o administrador para redefinir a senha.")
+
+    def submeter_auth(self):
+        if self.modo_auth == "login":
+            self.fazer_login()
+        else:
+            self.cadastrar_conta()
+
+    def cadastrar_conta(self):
+        user = self.ent_user.get().strip()
+        senha = self.ent_pass.get().strip()
+        if not user or not senha:
+            return self.lbl_status.configure(
+                text="⚠️ Preencha e-mail e senha!", text_color="#F59E0B"
+            )
+        if "@" not in user or "." not in user:
+            return self.lbl_status.configure(
+                text="⚠️ Insira um e-mail válido!", text_color="#F59E0B"
+            )
+        if len(senha) < 6:
+            return self.lbl_status.configure(
+                text="⚠️ A senha deve ter no mínimo 6 caracteres!", text_color="#F59E0B"
+            )
+
+        self.lbl_status.configure(text="Cadastrando no Supabase...", text_color=VERDE_ACAO)
+        self.update()
+
+        def thread_cadastro():
+            res = cadastrar_usuario(user, senha)
+            if res.get("status") == "sucesso":
+                self.after(0, lambda: messagebox.showinfo(
+                    "Cadastro Realizado",
+                    "Sua conta foi criada com sucesso! Faça o login agora."
+                ))
+                self.after(0, self.alternar_modo_auth)
+                self.after(0, lambda: self.lbl_status.configure(text=""))
+            else:
+                self.after(0, lambda: self.lbl_status.configure(
+                    text=f"❌ {res.get('mensagem')}", text_color=VERMELHO_PARAR
+                ))
+
+        threading.Thread(target=thread_cadastro, daemon=True).start()
 
     def fazer_login(self):
         user = self.ent_user.get().strip()
@@ -2921,35 +3451,49 @@ class AppPrincipal(ctk.CTk):
         lembrar = self.var_lembrar.get()
         if not user or not senha:
             return self.lbl_status.configure(
-                text="⚠️ Preencha usuário e senha!", text_color="#F59E0B"
+                text="⚠️ Preencha e-mail e senha!", text_color="#F59E0B"
             )
-        self.salvar_dados_login(user, lembrar)
-        self.lbl_status.configure(text="Conectando...", text_color=VERDE_ACAO)
+        if "@" not in user or "." not in user:
+            return self.lbl_status.configure(
+                text="⚠️ Insira um e-mail válido!", text_color="#F59E0B"
+            )
+
+        self.lbl_status.configure(text="Conectando ao Supabase...", text_color=VERDE_ACAO)
         self.update()
-        try:
-            url_api = "https://wesleyadrion.pythonanywhere.com/api/login/"
-            resposta = requests.post(
-                url_api, json={"username": user, "password": senha}, timeout=10
-            )
-            try:
-                dados = resposta.json()
-            except ValueError:
-                return self.lbl_status.configure(
-                    text=f"❌ O Servidor retornou HTML.", text_color=VERMELHO_PARAR
-                )
-            if resposta.status_code != 200:
-                return self.lbl_status.configure(
-                    text=f"❌ Erro {resposta.status_code}.", text_color=VERMELHO_PARAR
-                )
-            if dados.get("status") == "sucesso":
-                self.iniciar_robo_principal()
+
+        def thread_login():
+            res = fazer_login(user, senha)
+            if res.get("status") == "sucesso":
+                self.config["access_token"] = res.get("access_token", "")
+                self.config["refresh_token"] = res.get("refresh_token", "")
+                self.salvar_dados_login(user, lembrar)
+                self.after(0, self.iniciar_robo_principal)
             else:
-                self.lbl_status.configure(
-                    text=f"❌ {dados.get('mensagem', 'Usuário/senha incorretos')}",
-                    text_color=VERMELHO_PARAR,
-                )
-        except Exception as e:
-            self.lbl_status.configure(text=f"⚠️ Erro de rede", text_color=VERMELHO_PARAR)
+                self.after(0, lambda: self.lbl_status.configure(
+                    text=f"❌ {res.get('mensagem')}", text_color=VERMELHO_PARAR
+                ))
+
+        threading.Thread(target=thread_login, daemon=True).start()
+
+    def fazer_login_social(self, provedor):
+        self.lbl_status.configure(text=f"Aguardando navegador ({provedor.capitalize()})...", text_color=VERDE_ACAO)
+        self.update()
+
+        def thread_oauth():
+            res = iniciar_servidor_oauth_e_obter_token(provedor)
+            if res.get("status") == "sucesso":
+                email = res.get("user", {}).get("email", f"login_{provedor}")
+                self.config["access_token"] = res.get("access_token", "")
+                self.config["refresh_token"] = res.get("refresh_token", "")
+                self.salvar_dados_login(email, True)
+                self.after(0, self.iniciar_robo_principal)
+            else:
+                self.after(0, lambda: self.lbl_status.configure(
+                    text=f"❌ {res.get('mensagem')}", text_color=VERMELHO_PARAR
+                ))
+
+        threading.Thread(target=thread_oauth, daemon=True).start()
+
 
     def iniciar_robo_principal(self):
         for widget in self.winfo_children():
@@ -3059,7 +3603,7 @@ class MotorRobo:
                         worker_id = getattr(obj, "worker_id", 0)
                         break
                 detalhes = f"Planilha: {arquivo_origem}"
-                supabase_client.registrar_log(worker_id, nome_modulo, curso, professor, status, detalhes)
+                registrar_log(worker_id, nome_modulo, curso, professor, status, detalhes)
             except Exception as se:
                 print(f"[Supabase] Erro ao registrar log: {se}")
         except Exception as exc:
@@ -3419,6 +3963,51 @@ class MotorRobo:
         txt_widget.tag_config("texto", foreground="#E2E8F0")
         txt_widget.tag_config("destaque", foreground="#FCD34D")
 
+    def mudar_modo_robo(self, selection):
+        if selection == "Mapeamento por Múltiplos Módulos":
+            self.module_scope = "todos"
+            self.config["search_method"] = "Fuzzy Match (Buscar por Nomes)"
+            self.config["match_threshold"] = 0.60
+        elif selection == "Ordem Exata (Forma Geral)":
+            self.module_scope = "todos"
+            self.config["search_method"] = "Ordem Exata (Linha 1 = Módulo 1)"
+            self.config["match_threshold"] = 0.65
+        elif selection == "Mapeamento por Módulo Único":
+            self.module_scope = "unico"
+            self.config["search_method"] = "Fuzzy Match (Buscar por Nomes)"
+            self.config["match_threshold"] = 0.65
+        elif selection == "Migração Separada":
+            self.module_scope = "unico"
+            self.config["search_method"] = "Fuzzy Match (Buscar por Nomes)"
+            self.config["match_threshold"] = 0.65
+        
+        self.config["module_scope"] = self.module_scope
+        try:
+            save_config(CONFIG_PATH, self.config)
+        except Exception:
+            pass
+            
+        if self.module_scope == "unico":
+            if hasattr(self, "frame_modulo_unico") and self.frame_modulo_unico:
+                self.frame_modulo_unico.pack(fill="x", padx=16, pady=6)
+        else:
+            if hasattr(self, "frame_modulo_unico") and self.frame_modulo_unico:
+                self.frame_modulo_unico.pack_forget()
+            
+        if hasattr(self, "lbl_status_mod") and self.lbl_status_mod:
+            self.lbl_status_mod.configure(
+                text=f"Modo: {self.descricao_modo_upload()} | Escopo: {self.descricao_escopo()}"
+            )
+        self.atualizar_botoes_modo()
+        self.atualizar_resumo_modo()
+
+    def mudar_headless(self):
+        self.config["headless"] = self.var_headless.get()
+        try:
+            save_config(CONFIG_PATH, self.config)
+        except Exception:
+            pass
+
     def log(self, tipo, msg):
         hora = datetime.now().strftime("%H:%M:%S")
         level_map = {"OK": "SUCCESS", "ERRO": "ERROR", "MODULO": "WARNING"}
@@ -3489,8 +4078,22 @@ class MotorRobo:
             font=("Space Grotesk", 10, "bold"),
         )
 
-        frame_tb = ctk.CTkFrame(janela, fg_color="transparent")
-        frame_tb.pack(fill="both", expand=True, padx=20, pady=10)
+        # Criamos o Tabview de navegação interna
+        tabview = ctk.CTkTabview(
+            janela,
+            segmented_button_fg_color=_card,
+            segmented_button_selected_color=AZUL_PASSO,
+            segmented_button_selected_hover_color=AZUL_PASSO,
+            text_color=_text,
+            fg_color="transparent"
+        )
+        tabview.pack(fill="both", expand=True, padx=20, pady=10)
+        
+        tab_tabela = tabview.add("🗄️ Tabela de Histórico")
+        tab_graficos = tabview.add("📊 Gráficos de Produtividade")
+
+        frame_tb = ctk.CTkFrame(tab_tabela, fg_color="transparent")
+        frame_tb.pack(fill="both", expand=True, padx=10, pady=10)
 
         colunas = ("id", "modulo", "curso", "status", "data", "arquivo")
         tv = ttk.Treeview(frame_tb, columns=colunas, show="headings")
@@ -3513,6 +4116,93 @@ class MotorRobo:
                 tv.insert("", "end", values=linha)
         except Exception as exc:
             self.registrar_falha_caixa_preta("abrir_leitor_bd", exc)
+
+        # Aba de Gráficos e Métricas
+        frame_charts = ctk.CTkFrame(tab_graficos, fg_color="transparent")
+        frame_charts.pack(fill="both", expand=True, padx=10, pady=10)
+
+        try:
+            status_counts = self.history_repo.fetch_status_counts()
+            daily_counts = self.history_repo.fetch_daily_counts()
+        except Exception as err:
+            self.registrar_falha_caixa_preta("plotar_graficos_bd", err)
+            status_counts = []
+            daily_counts = []
+
+        if not status_counts:
+            lbl_aviso = ctk.CTkLabel(
+                frame_charts,
+                text="Sem dados históricos suficientes para gerar gráficos ainda.",
+                font=("Space Grotesk", 14, "bold"),
+                text_color=_muted
+            )
+            lbl_aviso.pack(expand=True)
+        else:
+            fig = plt.Figure(figsize=(8, 4), dpi=100, facecolor=_bg)
+            
+            # Subplot 1: Distribuição de Status (Pizza)
+            ax1 = fig.add_subplot(1, 2, 1)
+            ax1.set_facecolor(_bg)
+            
+            labels = [str(x[0]) for x in status_counts]
+            sizes = [int(x[1]) for x in status_counts]
+            
+            colors_map = {
+                "sucesso": "#10B981", 
+                "erro": "#EF4444", 
+                "aviso": "#F59E0B", 
+                "pulado": "#6B7280", 
+                "pulado (já existe)": "#6B7280"
+            }
+            colors = [colors_map.get(l.lower(), "#3B82F6") for l in labels]
+            
+            ax1.pie(
+                sizes, 
+                labels=labels, 
+                autopct='%1.1f%%', 
+                startangle=140, 
+                colors=colors,
+                textprops=dict(color=_text, size=8)
+            )
+            ax1.set_title("Distribuição de Status", fontdict={"color": _text, "weight": "bold", "size": 10})
+            
+            # Subplot 2: Volumetria nos Últimos 7 dias (Barras)
+            ax2 = fig.add_subplot(1, 2, 2)
+            ax2.set_facecolor(_card)
+            
+            if daily_counts:
+                daily_sorted = list(reversed(daily_counts))
+                dias = [str(x[0])[5:] for x in daily_sorted]  # corta o ano (MM-DD)
+                valores = [int(x[1]) for x in daily_sorted]
+                
+                bars = ax2.bar(dias, valores, color="#06B6D4", width=0.5)
+                for bar in bars:
+                    h = bar.get_height()
+                    ax2.annotate(
+                        f'{h}',
+                        xy=(bar.get_x() + bar.get_width() / 2, h),
+                        xytext=(0, 2),
+                        textcoords="offset points",
+                        ha='center', va='bottom',
+                        color=_text, size=8
+                    )
+            else:
+                dias = ["Sem dados"]
+                valores = [0]
+                ax2.bar(dias, valores, color="#06B6D4")
+                
+            ax2.set_title("Módulos Migrados (Últimos 7 Dias)", fontdict={"color": _text, "weight": "bold", "size": 10})
+            ax2.tick_params(colors=_text, labelsize=8)
+            ax2.spines['bottom'].set_color(_muted)
+            ax2.spines['left'].set_color(_muted)
+            ax2.spines['top'].set_visible(False)
+            ax2.spines['right'].set_visible(False)
+            
+            fig.tight_layout()
+            
+            canvas = FigureCanvasTkAgg(fig, master=frame_charts)
+            canvas.draw()
+            canvas.get_tk_widget().pack(fill="both", expand=True)
 
         def exportar_erros():
             try:
@@ -4825,6 +5515,23 @@ class MotorRobo:
             btn.pack(side="left", fill="x", expand=True, padx=2)
             self.botoes_escopo[escopo] = btn
 
+        self.var_headless = tk.BooleanVar(value=bool(self.config.get("headless", False)))
+        self.chk_headless = ctk.CTkCheckBox(
+            self.avancado_frame,
+            text="EXECUTAR EM SEGUNDO PLANO (MODO INVISÍVEL)",
+            font=("Space Grotesk", 10, "bold"),
+            text_color=color_cyan,
+            variable=self.var_headless,
+            fg_color=color_cyan,
+            hover_color=color_cyan,
+            border_color=color_border,
+            checkbox_width=18,
+            checkbox_height=18,
+            corner_radius=4,
+            command=self.mudar_headless
+        )
+        self.chk_headless.pack(anchor="w", padx=12, pady=(4, 12))
+
         self.lbl_modo_resumo = ctk.CTkLabel(col1_frame, text="", font=("Space Grotesk", 11, "bold"), text_color=color_yellow)
         self.lbl_modo_resumo.pack(anchor="w", padx=16, pady=(0, 8))
 
@@ -5160,7 +5867,7 @@ class MotorRobo:
         self.tocar_som("start")
         try:
             nome_pl = os.path.basename(self.nome_arquivo) if getattr(self, "nome_arquivo", None) else "Sem Planilha"
-            self.supabase_job_id = supabase_client.criar_job(nome_pl, self.total_modulos)
+            self.supabase_job_id = criar_job(nome_pl, self.total_modulos)
         except Exception as e:
             print(f"[Supabase] Erro ao criar job: {e}")
             self.supabase_job_id = None
@@ -5180,7 +5887,7 @@ class MotorRobo:
             )
             if getattr(self, "supabase_job_id", None):
                 try:
-                    supabase_client.atualizar_progresso_job(self.supabase_job_id, self.modulos_concluidos, "Executando")
+                    atualizar_progresso_job(self.supabase_job_id, self.modulos_concluidos, "Executando")
                 except Exception as e:
                     print(f"[Supabase] Erro ao atualizar progresso do job: {e}")
             
